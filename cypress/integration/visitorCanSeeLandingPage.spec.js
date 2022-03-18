@@ -10,6 +10,7 @@ describe("Visitor is able to navigate to landing page", () => {
 
     it("Visitor can see the landing page", () => {
       cy.get("[data-cy=test-id]").should("contain", "Hello");
+      cy.get("[data-cy=test-id]").should("have.css", "font-size", "48px");
     });
   });
 
@@ -19,6 +20,7 @@ describe("Visitor is able to navigate to landing page", () => {
     });
     it("Visitor can see the landing page", () => {
       cy.get("[data-cy=test-id]").should("contain", "Hello");
+      cy.get("[data-cy=test-id]").should("have.css", "font-size", "32px");
     });
   });
 });
