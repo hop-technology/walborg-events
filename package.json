@@ -12,7 +12,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "cy:run": "cypress run --record --key 864b0ae9-12c5-46d2-96a6-046dff033057",
+    "cy:run": "cypress run --record --key 0531ffb5-f52f-423b-8944-d92a4a2c7e4e",
     "cypress": "start-server-and-test start http://localhost:3000 cy:run"
   },
   "dependencies": {
