@@ -13,24 +13,33 @@
 
   &__title {
     font-size: 4.2rem;
+    font-weight: 500;
   }
 }
 
 .form {
   display: flex;
   flex-flow: row wrap;
-  margin-top: 5rem;
+  margin-top: 2rem;
   justify-content: space-between;
 
   &__input {
     &:not(:last-child) {
-      margin-bottom: 3.8rem;
+      margin-bottom: 2.6rem;
     }
     input {
+      padding-left: 0.5rem;
       width: 100%;
       height: 3.5rem;
       border: 0.1rem dashed #dbccca;
       background: #fdf3f2 0% 0% no-repeat padding-box;
+      color: #707070;
+      outline: none;
+      font-size: 1.2rem;
+
+      &::placeholder {
+        color: #b9b9b9;
+      }
     }
   }
 
@@ -43,10 +52,20 @@
     height: 27.3rem;
 
     textarea {
+      padding-left: 0.5rem;
+      padding-top: 1rem;
       width: 100%;
       height: 20.4rem;
       border: 0.1rem dashed #dbccca;
       background: #fdf3f2 0% 0% no-repeat padding-box;
+      font-family: brandon-grotesque, sans-serif;
+      color: #707070;
+      outline: none;
+      font-size: 1.2rem;
+
+      &::placeholder {
+        color: #b9b9b9;
+      }
     }
   }
 
@@ -94,30 +113,14 @@
       }
     }
   }
-  .btn__submit {
-    width: 36.3rem;
-    height: 6.3rem;
-    border: none;
-    border-radius: 0.3rem;
-    opacity: 1;
-    background-color: #faaeaa;
-    padding: 0.7rem;
-    margin-top: 2rem;
-
-    &:hover {
+  .privacy-policy {
+    font-size: 1.3rem;
+    span {
+      color: #bf5267;
       cursor: pointer;
-    }
-
-    &--border {
-      border: 0.3rem solid #ffffff;
-      border-radius: 0.3rem;
-      height: 100%;
-      width: 100%;
-    }
-
-    &--text {
-      margin-top: 1.5rem;
-      color: #ffffff;
+      &:hover {
+        color: #eb6b84;
+      }
     }
   }
 
@@ -127,3 +130,37 @@
     justify-content: center;
   }
 }
+
+.btn__submit {
+  width: 25rem;
+  height: 6rem;
+  border: none;
+  border-radius: 0.3rem;
+  opacity: 1;
+  background-color: #faaeaa;
+  padding: 0.7rem;
+  margin-top: 2rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.3rem solid #ffffff;
+    border-radius: 0.3rem;
+    height: 100%;
+    width: 100%;
+  }
+
+  &--text {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: brandon-grotesque, sans-serif;
+  }
+}
+
+
