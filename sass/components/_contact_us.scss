@@ -1,47 +1,67 @@
-.contact_us_form_main {
-  display: flex;
-  flex-direction: row;
-  border: .4rem solid #ffffff;
-  border-radius: .3rem;
-  opacity: 1;
+.contact {
+  background-color: #fae6e5;
+  padding: 1rem;
+  margin: 5rem 25rem;
+  border-radius: 0.3rem;
 
-  input {
-    width: 100%;
-    height: 5.1rem;
-    border: .1rem dashed #dbccca;
-    background: #fdf3f2 0% 0% no-repeat padding-box;
-  }
-}
-
-.contact-us-one {
-  width: 100%;
-  margin: 5rem;
-}
-
-.contact-us-two {
-  width: 100%;
-  height: 27.3rem;
-  margin: 5rem;
-
-  textarea {
-    width: 48rem;
-    height: 27.3rem;
-    border: .1rem dashed #dbccca;
-    background: #fdf3f2 0% 0% no-repeat padding-box;
-  }
-}
-
-.contact-us-three {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-
-  button {
-    width: 36.3rem;
-    height: 6.3rem;
-    border: .3rem solid #ffffff;
-    border-radius: .3rem;
+  &__container {
+    border: 0.4rem solid #ffffff;
+    border-radius: 0.3rem;
     opacity: 1;
+    padding: 7.5rem;
+  }
+
+  &__title {
+    font-size: 4.2rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 5rem;
+  justify-content: space-between;
+
+  &__input {
+    &:not(:last-child) {
+      margin-bottom: 3.8rem;
+    }
+    input {
+      width: 100%;
+      height: 3.5rem;
+      border: 0.1rem dashed #dbccca;
+      background: #fdf3f2 0% 0% no-repeat padding-box;
+    }
+  }
+
+  &__part1 {
+    width: 36rem;
+  }
+
+  &__part2 {
+    width: 36rem;
+    height: 27.3rem;
+
+    textarea {
+      width: 100%;
+      height: 20.4rem;
+      border: 0.1rem dashed #dbccca;
+      background: #fdf3f2 0% 0% no-repeat padding-box;
+    }
+  }
+
+  &__part3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .btn--submit {
+      width: 36.3rem;
+      height: 6.3rem;
+      border: 0.3rem solid #ffffff;
+      border-radius: 0.3rem;
+      opacity: 1;
+    }
   }
 }
