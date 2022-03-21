@@ -1,32 +1,32 @@
 .contact_us_form_main {
   display: flex;
   flex-direction: row;
-  border: 4px solid #ffffff;
-  border-radius: 3px;
+  border: .4rem solid #ffffff;
+  border-radius: .3rem;
   opacity: 1;
 
   input {
     width: 100%;
-    height: 51px;
-    border: 1px dashed #dbccca;
+    height: 5.1rem;
+    border: .1rem dashed #dbccca;
     background: #fdf3f2 0% 0% no-repeat padding-box;
   }
 }
 
 .contact-us-one {
   width: 100%;
-  margin: 50px;
+  margin: 5rem;
 }
 
 .contact-us-two {
   width: 100%;
-  height: 273px;
-  margin: 50px;
+  height: 27.3rem;
+  margin: 5rem;
 
   textarea {
-    width: 480px;
-    height: 273px;
-    border: 1px dashed #dbccca;
+    width: 48rem;
+    height: 27.3rem;
+    border: .1rem dashed #dbccca;
     background: #fdf3f2 0% 0% no-repeat padding-box;
   }
 }
@@ -38,10 +38,10 @@
   width: 100%;
 
   button {
-    width: 363px;
-    height: 63px;
-    border: 3px solid #ffffff;
-    border-radius: 3px;
+    width: 36.3rem;
+    height: 6.3rem;
+    border: .3rem solid #ffffff;
+    border-radius: .3rem;
     opacity: 1;
   }
 }
