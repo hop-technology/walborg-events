@@ -37,6 +37,13 @@ body {
   }
 }
 
+body {
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #707070;
+}
+
 .contact {
   background-color: #fae6e5;
   padding: 1rem;
