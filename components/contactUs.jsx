@@ -15,7 +15,7 @@ export default function ContactForm() {
             data-cy='contact-us-form'>
             <div className='form__part1'>
               <input type='hidden' name='form-name' value='contact' />
-              <div className="form__input">
+              <div className='form__input'>
                 <label>Mitt namn är</label> <br />
                 <input
                   type='name'
@@ -25,7 +25,7 @@ export default function ContactForm() {
                   data-cy='name'
                 />
               </div>
-              <div className="form__input">
+              <div className='form__input'>
                 <label>Kontaka mig på </label> <br />
                 <input
                   type='email'
@@ -35,7 +35,7 @@ export default function ContactForm() {
                   data-cy='email'
                 />
               </div>
-              <div className="form__input">
+              <div className='form__input'>
                 <label>Mitt telefonnummer är</label> <br />
                 <input
                   type='tel'
@@ -67,8 +67,10 @@ export default function ContactForm() {
                 required='true'
               />
               <div>
-                <button className='btn--submit' type='submit' data-cy='submit'>
-                  Skicka
+                <button className='btn__submit' type='submit' data-cy='submit'>
+                  <div className='btn__submit--border'>
+                    <p className='btn__submit--text'>Skicka</p>
+                  </div>
                 </button>
               </div>
             </div>
