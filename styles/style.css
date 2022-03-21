@@ -51,6 +51,11 @@ body {
   margin: 5rem 25rem;
   border-radius: 0.3rem;
 }
+@media (max-width: 768px) {
+  .contact {
+    margin: 5rem 0;
+  }
+}
 .contact__container {
   border: 0.4rem solid #ffffff;
   border-radius: 0.3rem;
