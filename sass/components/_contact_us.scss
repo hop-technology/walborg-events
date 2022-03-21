@@ -61,37 +61,10 @@
       margin-right: 1rem;
     }
   }
-  .btn__submit {
-    width: 36.3rem;
-    height: 6.3rem;
-    border: none;
-    border-radius: 0.3rem;
-    opacity: 1;
-    background-color: #faaeaa;
-    padding: 0.7rem;
-    margin-top: 2rem;
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    &--border {
-      border: 0.3rem solid #ffffff;
-      border-radius: 0.3rem;
-      height: 100%;
-      width: 100%;
-    }
-
-    &--text {
-      margin-top: 1.5rem;
-      color: #ffffff;
-    }
-  }
 
   &__button__box {
     width: 100%;
     display: flex;
     justify-content: center;
-
   }
 }

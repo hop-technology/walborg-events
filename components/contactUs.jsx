@@ -79,9 +79,9 @@ export default function ContactForm() {
               </div>
             </div>
             <div className="form__button__box">
-              <button className="btn__submit" type="submit" data-cy="submit">
-                <div className="btn__submit--border">
-                  <p className="btn__submit--text">Skicka</p>
+              <button className="btn" type="submit" data-cy="submit">
+                <div className="btn--border">
+                  <p className="btn--text">Skicka</p>
                 </div>
               </button>
             </div>
