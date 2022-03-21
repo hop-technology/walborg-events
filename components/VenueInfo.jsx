@@ -16,9 +16,9 @@ export default function Venue() {
       </div>
       <div>
         <Link href="#contact" scroll>
-          <button className="btn">
-            <div className="btn--border">
-              <p className="btn--text">Boka nu</p>
+          <button className="btn__submit">
+            <div className="btn__submit--border">
+              <p className="btn__submit--text">Boka nu</p>
             </div>
           </button>
         </Link>
