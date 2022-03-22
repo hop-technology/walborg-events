@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-// import { VenueTree } from './svgs/VenueTree'
 
 const Venue = () => {
   return (
@@ -35,7 +34,6 @@ const Venue = () => {
             height='1019px'
             alt='Walborg event'
           />
-          {/* <VenueTree /> */}
         </div>
         <div className='venue__coverbox'></div>
       </div>
