@@ -34,9 +34,4 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   background-color: $color-bg-primary;
-
-  @include respond(tab-port) {
-    // width < 900?
-    padding: 0rem;
-  }
 }

@@ -37,11 +37,6 @@ body {
   overflow-x: hidden;
   background-color: #f5f2ed;
 }
-@media only screen and (max-width: 56.25em) {
-  body {
-    padding: 0rem;
-  }
-}
 
 body {
   font-family: brandon-grotesque, sans-serif;
@@ -299,49 +294,34 @@ body {
 }
 
 .venue {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 650px;
+  height: 100vh;
+  margin-top: 27.9rem;
 }
-@media (max-width: 768px) {
-  .venue__info_title {
-    margin-top: 10px;
-  }
+.venue__info--title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.78rem;
+  font-weight: 700;
+}
+.venue__info--description {
+  width: 60rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 .venue button {
-  width: 172px;
-  height: 71px;
-}
-@media (max-width: 768px) {
-  .venue button {
-    width: 151px;
-    height: 48px;
-  }
-}
-.venue__info__description {
-  width: 600px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
+  width: 15.2rem;
+  height: 6.8rem;
 }
 .venue__tree {
   position: absolute;
   top: 0;
   right: -200px;
   z-index: -100;
-}
-@media (max-width: 768px) {
-  .venue__tree {
-    display: none;
-  }
-}
-.venue__coverbox {
-  height: 150px;
-  width: 100%;
-  z-index: 100;
-  margin-top: 30px;
-  background-color: #f5f2ed;
 }
 
 /*# sourceMappingURL=style.css.map */
