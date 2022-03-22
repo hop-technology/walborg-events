@@ -29,7 +29,7 @@ const Venue = () => {
           </Link>
         </div>
         <div className='venue__tree'>
-        <Image
+          <Image
             src='/white-tree.svg'
             width='1030px'
             height='1019px'
@@ -37,8 +37,8 @@ const Venue = () => {
           />
           {/* <VenueTree /> */}
         </div>
+        <div className='venue__coverbox'></div>
       </div>
-      {/* <div className='venue__coverbox'></div> */}
     </>
   )
 }

@@ -25,11 +25,6 @@
   button {
     width: 15.2rem;
     height: 6.8rem;
-
-    // @media (max-width: 768px) {
-    //   width: 151px;
-    //   height: 48px;
-    // }
   }
 
   &__tree {
@@ -50,11 +45,19 @@
     }
   }
 
-  // &__coverbox {
-  //   height: 150px;
-  //   width: 100%;
-  //   z-index: 100;
-  //   margin-top: 30px;
-  //   background-color: $color-bg-primary;
-  // }
+  &__coverbox {
+    position: absolute;
+    height: 20rem;
+    width: 100%;
+    z-index: -99;
+    top: 53rem;
+    background-color: $color-bg-primary;
+
+    @include respond(desktop-M) {
+      top: 63rem;
+    }
+    @include respond(laptop-L) {
+      top: 47rem;
+    }
+  }
 }
