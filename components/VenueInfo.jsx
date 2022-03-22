@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { VenueTree } from './svgs/VenueTree'
+import Image from 'next/image'
+// import { VenueTree } from './svgs/VenueTree'
 
 const Venue = () => {
   return (
@@ -28,7 +29,13 @@ const Venue = () => {
           </Link>
         </div>
         <div className='venue__tree'>
-          <VenueTree />
+        <Image
+            src='/white-tree.svg'
+            width='1030px'
+            height='1019px'
+            alt='Walborg event'
+          />
+          {/* <VenueTree /> */}
         </div>
       </div>
       {/* <div className='venue__coverbox'></div> */}

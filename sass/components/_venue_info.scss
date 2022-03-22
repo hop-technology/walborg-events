@@ -10,7 +10,7 @@
     &--title {
       text-align: center;
       text-transform: uppercase;
-      letter-spacing: .78rem;
+      letter-spacing: 0.78rem;
       font-weight: 700;
     }
 
@@ -32,14 +32,22 @@
     // }
   }
 
-  
-
   &__tree {
     position: absolute;
-    top: -0;
-    right: -200px;
+    top: -5rem;
+    right: -19rem;
     z-index: -100;
 
+    @include respond(desktop-M) {
+      width: 100rem;
+      right: -24rem;
+    }
+
+    @include respond(laptop-L) {
+      width: 70rem;
+      right: -16rem;
+      top: 0;
+    }
   }
 
   // &__coverbox {

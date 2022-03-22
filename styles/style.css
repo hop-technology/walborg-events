@@ -319,9 +319,22 @@ body {
 }
 .venue__tree {
   position: absolute;
-  top: 0;
-  right: -200px;
+  top: -5rem;
+  right: -19rem;
   z-index: -100;
+}
+@media only screen and (max-width: 109.375em) {
+  .venue__tree {
+    width: 100rem;
+    right: -24rem;
+  }
+}
+@media only screen and (max-width: 87.5em) {
+  .venue__tree {
+    width: 70rem;
+    right: -16rem;
+    top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
