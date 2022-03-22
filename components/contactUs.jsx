@@ -1,12 +1,12 @@
 const ContactForm = () => {
   const handleError = (e) => {
     e.target.setCustomValidity(
-      "Du måste godkänna vår policy för att kunna skicka in ditt meddelande"
+      'Du måste godkänna vår policy för att kunna skicka in ditt meddelande'
     );
   };
 
   const handleInput = (e) => {
-    e.target.setCustomValidity("");
+    e.target.setCustomValidity('');
   };
   return (
     <>
@@ -81,7 +81,7 @@ const ContactForm = () => {
               </div>
               <div>
                 <label className='privacy-policy'>
-                  Jag accepterar Walborg Events <span>privacy policy</span>{" "}
+                  Jag accepterar Walborg Events <span>privacy policy</span>{' '}
                 </label>
               </div>
             </div>

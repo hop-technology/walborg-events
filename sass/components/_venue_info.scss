@@ -1,49 +1,49 @@
 .venue {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 650px;
 
-	&__info_title {
-		@media (max-width: 768px) {
-			margin-top: 10px;
-		}
-	}
+  &__info_title {
+    @media (max-width: 768px) {
+      margin-top: 10px;
+    }
+  }
 
-	button {
-		width: 172px;
-		height: 71px;
+  button {
+    width: 172px;
+    height: 71px;
 
-		@media (max-width: 768px) {
-			width: 151px;
-			height: 48px;
-		}
-	}
+    @media (max-width: 768px) {
+      width: 151px;
+      height: 48px;
+    }
+  }
 
-	&__info__description {
-		width: 600px;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		text-align: center;
-	}
+  &__info__description {
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
-	&__tree {
-		position: absolute;
-		top: -0;
-		right: -200px;
-		z-index: -100;
+  &__tree {
+    position: absolute;
+    top: -0;
+    right: -200px;
+    z-index: -100;
 
-		// Temporary fix. needs to be removed when fixing responsiveness, currently breaks tests on desktop.
-		@media (max-width: 768px) {
-			display: none;
-		}
-	}
+    // Temporary fix. needs to be removed when fixing responsiveness, currently breaks tests on desktop.
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
 
-	&__coverbox {
-		height: 150px;
-		width: 100%;
-		z-index: 100;
-		margin-top: 30px;
-		background-color: $color-bg-primary;
-	}
+  &__coverbox {
+    height: 150px;
+    width: 100%;
+    z-index: 100;
+    margin-top: 30px;
+    background-color: $color-bg-primary;
+  }
 }

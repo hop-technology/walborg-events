@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { VenueTree } from "./svgs/VenueTree";
+import Link from 'next/link';
+import { VenueTree } from './svgs/VenueTree';
 
 const Venue = () => {
   return (
@@ -29,8 +29,7 @@ const Venue = () => {
           <VenueTree />
         </div>
       </div>
-        <div className="venue__coverbox">
-        </div>
+      <div className='venue__coverbox'></div>
     </>
   );
 };
