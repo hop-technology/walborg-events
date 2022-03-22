@@ -301,11 +301,31 @@ body {
   height: 100vh;
   margin-top: 27.9rem;
 }
+@media only screen and (max-width: 32.75em) {
+  .venue {
+    margin-top: 22rem;
+  }
+}
+@media only screen and (max-width: 23.438em) {
+  .venue {
+    margin-top: 17rem;
+  }
+}
+@media only screen and (max-width: 32.75em) {
+  .venue__info {
+    margin-left: 1.5rem;
+  }
+}
 .venue__info--title {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.78rem;
   font-weight: 700;
+}
+@media only screen and (max-width: 23.438em) {
+  .venue__info--title {
+    font-size: 1.3rem;
+  }
 }
 .venue__info--description {
   width: 60rem;
@@ -313,11 +333,23 @@ body {
   margin-bottom: 2rem;
   text-align: center;
 }
+@media only screen and (max-width: 32.75em) {
+  .venue__info--description {
+    width: 40rem;
+  }
+}
+@media only screen and (max-width: 23.438em) {
+  .venue__info--description {
+    width: 30rem;
+    margin-left: 2rem;
+  }
+}
 .venue button {
   width: 15.2rem;
   height: 6.8rem;
 }
 .venue__tree {
+  display: flex;
   position: absolute;
   top: -5rem;
   right: -19rem;
@@ -336,6 +368,29 @@ body {
     top: 0;
   }
 }
+@media only screen and (max-width: 56.25em) {
+  .venue__tree {
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 70rem;
+    right: 0%;
+    top: -40rem;
+    transform: rotate(-40deg) rotateY(180deg);
+  }
+}
+@media only screen and (max-width: 32.75em) {
+  .venue__tree {
+    width: 55rem;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .venue__tree {
+    width: 40rem;
+    top: -26rem;
+  }
+}
 .venue__coverbox {
   position: absolute;
   height: 20rem;
@@ -352,6 +407,11 @@ body {
 @media only screen and (max-width: 87.5em) {
   .venue__coverbox {
     top: 47rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .venue__coverbox {
+    top: 46rem;
   }
 }
 

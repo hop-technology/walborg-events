@@ -5,13 +5,25 @@
   align-items: center;
   height: 100vh;
   margin-top: 27.9rem;
+  @include respond(phone-L) {
+    margin-top: 22rem;
+  }
+  @include respond(phone-M) {
+    margin-top: 17rem;
+  }
 
   &__info {
+    @include respond(phone-L) {
+      margin-left: 1.5rem;
+    }
     &--title {
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 0.78rem;
       font-weight: 700;
+      @include respond(phone-M) {
+        font-size: 1.3rem;
+      }
     }
 
     &--description {
@@ -19,6 +31,15 @@
       margin-top: 2rem;
       margin-bottom: 2rem;
       text-align: center;
+
+      @include respond(phone-L) {
+        width: 40rem;
+      }
+
+      @include respond(phone-M) {
+        width: 30rem;
+        margin-left: 2rem;
+      }
     }
   }
 
@@ -28,6 +49,7 @@
   }
 
   &__tree {
+    display: flex;
     position: absolute;
     top: -5rem;
     right: -19rem;
@@ -42,6 +64,25 @@
       width: 70rem;
       right: -16rem;
       top: 0;
+    }
+
+    @include respond(tab-port) {
+      position: relative;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      width: 70rem;
+      right: 0%;
+      top: -40rem;
+      transform: rotate(-40deg) rotateY(180deg);
+    }
+
+    @include respond(phone-L) {
+      width: 55rem;
+    }
+    @include respond(phone-S) {
+      width: 40rem;
+      top: -26rem;
     }
   }
 
@@ -58,6 +99,9 @@
     }
     @include respond(laptop-L) {
       top: 47rem;
+    }
+    @include respond(tab-port) {
+      top: 46rem;
     }
   }
 }
