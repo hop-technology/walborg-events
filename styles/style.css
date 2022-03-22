@@ -30,7 +30,7 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 56.25em) {
   body {
@@ -199,6 +199,29 @@ body {
   font-size: 2rem;
   font-weight: 500;
   font-family: brandon-grotesque, sans-serif;
+}
+
+.hero {
+  position: relative;
+}
+.hero__nav {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: center;
+  position: absolute;
+  top: -80px;
+  width: 100vw;
+}
+@media only screen and (max-width: 87.5em) {
+  .hero__nav {
+    top: -100px;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .hero__nav {
+    top: -120px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

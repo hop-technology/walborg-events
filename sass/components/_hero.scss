@@ -1,0 +1,23 @@
+.hero {
+  position: relative;
+  &__nav {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: center;
+    position: absolute;
+    top: -80px;
+    width: 100vw;
+
+    @include respond(laptop-L) {
+      top: -100px;
+    }
+    @include respond(tab-port) {
+      top: -120px;
+    }
+  }
+
+  &__video {
+    
+  }
+}
