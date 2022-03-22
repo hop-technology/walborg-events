@@ -11,6 +11,10 @@
 html {
   font-size: 62.5%;
   /* allows user to zom in on page (change font size) px won't work*/
+  /*   @include respond(phone) {
+      // width < 600?
+      font-size: 30%; // 1 rem = 4.8px, 4.8/16 =30%
+    } */
 }
 @media only screen and (max-width: 75em) {
   html {
@@ -30,7 +34,8 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
+  overflow-x: hidden;
+  background-color: #f5f2ed;
 }
 @media only screen and (max-width: 56.25em) {
   body {
@@ -50,6 +55,7 @@ body {
   padding: 1rem;
   margin: 5rem 25rem;
   border-radius: 0.3rem;
+  background-color: #fae6e5;
 }
 @media (max-width: 768px) {
   .contact {
@@ -170,6 +176,52 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.venue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 650px;
+}
+@media (max-width: 768px) {
+  .venue__info_title {
+    margin-top: 10px;
+  }
+}
+.venue button {
+  width: 172px;
+  height: 71px;
+}
+@media (max-width: 768px) {
+  .venue button {
+    width: 151px;
+    height: 48px;
+  }
+}
+.venue__info__description {
+  width: 600px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.venue__tree {
+  position: absolute;
+  top: 0;
+  right: -200px;
+  z-index: -100;
+}
+@media (max-width: 768px) {
+  .venue__tree {
+    display: none;
+  }
+}
+.venue__coverbox {
+  height: 150px;
+  width: 100%;
+  z-index: 100;
+  margin-top: 30px;
+  background-color: #f5f2ed;
 }
 
 .btn__submit {
