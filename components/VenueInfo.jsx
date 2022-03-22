@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Venue() {
+const Venue = () => {
   return (
     <div className="venue">
       <div className="venue__info__title">
@@ -26,3 +26,5 @@ export default function Venue() {
     </div>
   );
 }
+
+export default Venue;
