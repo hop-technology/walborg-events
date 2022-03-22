@@ -35,6 +35,7 @@ html {
 body {
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: #f5f2ed;
 }
 @media only screen and (max-width: 56.25em) {
   body {
@@ -181,7 +182,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f5f2ed;
   height: 650px;
 }
 @media (max-width: 768px) {
@@ -209,11 +209,19 @@ body {
   position: absolute;
   top: 0;
   right: -200px;
+  z-index: -100;
 }
 @media (max-width: 768px) {
   .venue__tree {
     display: none;
   }
+}
+.venue__coverbox {
+  height: 150px;
+  width: 100%;
+  z-index: 100;
+  margin-top: 30px;
+  background-color: #f5f2ed;
 }
 
 .btn__submit {

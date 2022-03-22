@@ -29,6 +29,8 @@ const Venue = () => {
           <VenueTree />
         </div>
       </div>
+        <div className="venue__coverbox">
+        </div>
     </>
   );
 };
