@@ -24,7 +24,7 @@
       @content;
     }
   }
-  @if $breakpoint == tab-land {     // 1200px
+  @if $breakpoint == laptop-M {     // 1200px
     @media only screen and (max-width: 75em) {
       @content;
     }
@@ -34,7 +34,17 @@
       @content;
     }
   }
-  @if $breakpoint == big-desktop {  // 1800px
+  @if $breakpoint == desktop-S {  // 1640px
+    @media only screen and (max-width: 102.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-M {  // 1750px
+    @media only screen and (max-width: 109.375em) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-L {  // 1800px
     @media only screen and (min-width: 112.5em) {
       @content;
     }

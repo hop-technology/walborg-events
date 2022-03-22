@@ -4,7 +4,7 @@ export const NavDesk = () => (
     width='1920'
     height='210'
     viewBox='0 0 1921 210'>
-    <g data-name='Group 471' opacity='.244' stroke='#faaeaa'>
+    <g data-name='Group 471' opacity='1' stroke='#faaeaa'>
       <g data-name='Rectangle 66' fill='#faaeaa'>
         <path d='M0 0h1921v120H0z' stroke='none' />
         <path fill='none' d='M.5.5h1920v119H.5z' />

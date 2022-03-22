@@ -210,18 +210,86 @@ body {
   align-content: flex-start;
   justify-content: center;
   position: absolute;
-  top: -80px;
+  top: -3rem;
   width: 100vw;
+}
+@media only screen and (max-width: 109.375em) {
+  .hero__nav {
+    top: -4rem;
+  }
 }
 @media only screen and (max-width: 87.5em) {
   .hero__nav {
-    top: -100px;
+    top: -5rem;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .hero__nav {
+    top: -6.2rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .hero__nav {
-    top: -120px;
+    top: -12rem;
   }
+}
+.hero__logo {
+  position: absolute;
+  left: 50.5%;
+  transform: translateX(-50.5%);
+  top: -2.6rem;
+  z-index: 2;
+  width: 210px;
+  height: 210px;
+}
+@media only screen and (max-width: 109.375em) {
+  .hero__logo {
+    width: 190px;
+    height: 190px;
+  }
+}
+@media only screen and (max-width: 102.5em) {
+  .hero__logo {
+    width: 170px;
+    height: 170px;
+  }
+}
+@media only screen and (max-width: 87.5em) {
+  .hero__logo {
+    width: 150px;
+    height: 150px;
+    left: 50.7%;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .hero__logo {
+    width: 120px;
+    height: 120px;
+    top: -1.9rem;
+    left: 50.9%;
+  }
+}
+.hero__video-container {
+  position: relative;
+  z-index: -1;
+  height: calc(100vh - 80px);
+  width: 100vw;
+  top: 6.9rem;
+}
+@media only screen and (max-width: 87.5em) {
+  .hero__video-container {
+    top: 6.5rem;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .hero__video-container {
+    top: 6.2rem;
+  }
+}
+.hero__video-container--video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
