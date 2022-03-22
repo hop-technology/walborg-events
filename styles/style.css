@@ -54,7 +54,7 @@ body {
   padding: 1rem;
   margin: 5rem 25rem;
   border-radius: 0.3rem;
-  background-color: #FAE6E5;
+  background-color: #fae6e5;
 }
 @media (max-width: 768px) {
   .contact {
@@ -181,7 +181,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F5F2ED;
+  background-color: #f5f2ed;
   height: 650px;
 }
 @media (max-width: 768px) {
@@ -193,24 +193,24 @@ body {
   width: 172px;
   height: 71px;
 }
+@media (max-width: 768px) {
+  .venue button {
+    width: 151px;
+    height: 48px;
+  }
+}
 .venue__info__description {
   width: 600px;
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
 }
-@media (max-width: 768px) {
-  .venue__info__description {
-    width: 100%;
-    padding: 20px;
-  }
-}
 .venue__tree {
   position: absolute;
   top: 0;
   right: -200px;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .venue__tree {
     display: none;
   }

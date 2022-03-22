@@ -14,6 +14,11 @@
   button {
     width: 172px;
     height: 71px;
+
+    @media (max-width: 768px) {
+      width: 151px;
+      height: 48px;
+    }
   }
 
   &__info__description {
@@ -21,11 +26,6 @@
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
-
-    @media (max-width: 768px) {
-      width: 100%;
-      padding: 20px;
-    }
   }
 
   &__tree {
@@ -33,7 +33,8 @@
     top: -0;
     right: -200px;
 
-    @media (max-width: 600px) {
+    // Temporary fix. needs to be removed when fixing responsiveness, currently breaks tests on desktop.
+    @media (max-width: 768px) {
       display: none;
     }
   }
