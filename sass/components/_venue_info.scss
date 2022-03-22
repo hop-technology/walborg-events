@@ -2,13 +2,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: $color-bg-primary;
+  height: 650px;
 
+  &__info_title {
+    @media (max-width: 768px) {
+      margin-top: 10px;
+    }
+  }
 
+  button {
+    width: 172px;
+    height: 71px;
+  }
 
   &__info__description {
     width: 600px;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+
+  &__tree {
+    position: absolute;
+    top: -0;
+    right: -200px;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 }
