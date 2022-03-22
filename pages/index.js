@@ -1,6 +1,8 @@
 import Head from 'next/head'
-import ContactUs from '../components/ContactUs'
+
 import HeroSection from '../components/HeroSection'
+import Venue from '../components/VenueInfo'
+import ContactUs from '../components/ContactUs'
 
 const Index = () => {
   return (
@@ -11,6 +13,7 @@ const Index = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <HeroSection />
+      <Venue />
       <ContactUs />
     </div>
   )

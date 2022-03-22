@@ -15,13 +15,15 @@ html {
     font-size: 56.25%; // 1 rem = 9px, 9/16 = 56.25%
   }
 
-  @include respond(tab-port) { // width < 900?
+  @include respond(tab-port) {
+    // width < 900?
     font-size: 50%; // 1 rem = 8px, 8/16 =50%
   }
 
-  // @include respond(phone) { // width < 600?
-  //   font-size: 30%; // 1 rem = 4.8px, 4.8/16 =30%
-  // }
+/*   @include respond(phone) {
+    // width < 600?
+    font-size: 30%; // 1 rem = 4.8px, 4.8/16 =30%
+  } */
 
   @include respond(desktop-L) { // width > 1800?
     font-size: 75%; //1rem = 12, 12/16 = 75%
@@ -31,8 +33,10 @@ html {
 body {
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: $color-bg-primary;
 
-  @include respond(tab-port) { // width < 900?
+  @include respond(tab-port) {
+    // width < 900?
     padding: 0rem;
   }
 }

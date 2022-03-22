@@ -19,7 +19,8 @@
       @content;
     }
   }
-  @if $breakpoint == tab-port {     // 900px
+  @if $breakpoint == tab-port {
+    // 900px
     @media only screen and (max-width: 56.25em) {
       @content;
     }

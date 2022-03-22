@@ -1,9 +1,13 @@
-export default function ContactForm() {
+const ContactForm = () => {
   const handleError = (e) => {
     e.target.setCustomValidity(
       'Du måste godkänna vår policy för att kunna skicka in ditt meddelande'
-    )
-  }
+    );
+  };
+
+  const handleInput = (e) => {
+    e.target.setCustomValidity('');
+  };
   return (
     <>
       <div className='contact'>
@@ -17,7 +21,8 @@ export default function ContactForm() {
             method='post'
             data-netlify='true'
             data-netlify-honeypot='bot-field'
-            data-cy='contact-us-form'>
+            data-cy='contact-us-form'
+          >
             <div className='form__part1'>
               <input type='hidden' name='form-name' value='contact' />
               <div className='form__input'>
@@ -71,12 +76,12 @@ export default function ContactForm() {
                   data-cy='privacy-policy'
                   required
                   onInvalid={handleError}
+                  onInput={handleInput}
                 />
               </div>
               <div>
                 <label className='privacy-policy'>
-                  Jag accepterar Walborg Events{' '}
-                  <span >privacy policy</span>{' '}
+                  Jag accepterar Walborg Events <span>privacy policy</span>{' '}
                 </label>
               </div>
             </div>
@@ -91,5 +96,7 @@ export default function ContactForm() {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
+
+export default ContactForm;
