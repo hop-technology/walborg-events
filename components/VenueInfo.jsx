@@ -35,7 +35,6 @@ const Venue = () => {
             alt='Walborg event'
           />
         </div>
-        <div className='venue__coverbox'></div>
       </div>
     </>
   )
