@@ -89,6 +89,59 @@ body {
   font-family: brandon-grotesque, sans-serif;
 }
 
+.collage {
+  margin-bottom: 25rem;
+}
+@media only screen and (max-width: 162.5em) {
+  .collage {
+    margin-bottom: 20rem;
+  }
+}
+@media only screen and (max-width: 112.5em) {
+  .collage {
+    margin-bottom: 15rem;
+  }
+}
+@media only screen and (max-width: 87.5em) {
+  .collage {
+    margin-bottom: 10rem;
+  }
+}
+@media only screen and (max-width: 20em) {
+  .collage {
+    margin-bottom: 5rem;
+  }
+}
+.collage--big {
+  display: block;
+}
+@media only screen and (max-width: 125em) {
+  .collage--big {
+    display: none;
+  }
+}
+.collage--normal {
+  display: none;
+}
+@media only screen and (max-width: 125em) {
+  .collage--normal {
+    display: block;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .collage--normal {
+    display: none;
+  }
+}
+.collage--small {
+  display: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .collage--small {
+    display: block;
+  }
+}
+
 .contact {
   background-color: #fae6e5;
   padding: 1rem;

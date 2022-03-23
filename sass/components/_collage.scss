@@ -1,0 +1,42 @@
+.collage {
+  margin-bottom: 25rem;
+
+  @include respond(desktop-XL) {
+    margin-bottom: 20rem;
+  }
+
+  @include respond(desktop-M) {
+    margin-bottom: 15rem;
+  }
+
+  @include respond(laptop-L) {
+    margin-bottom: 10rem;
+  }
+  @include respond(phone-S) {
+    margin-bottom: 5rem;
+  }
+
+  &--big {
+    display: block;
+    @include respond(desktop-L) {
+      display: none;
+    }
+  }
+
+  &--normal {
+    display: none;
+    @include respond(desktop-L) {
+      display: block;
+    }
+    @include respond(phone-XL) {
+      display: none;
+    }
+  }
+
+  &--small {
+    display: none;
+    @include respond(phone-XL) {
+      display: block;
+    }
+  }
+}
