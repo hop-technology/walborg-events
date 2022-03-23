@@ -3,6 +3,7 @@ import Head from 'next/head'
 import HeroSection from '../components/HeroSection'
 import Venue from '../components/VenueInfo'
 import ContactUs from '../components/ContactUs'
+import Collage from '../components/Collage'
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <div className='wrapper'>
         <HeroSection />
         <Venue />
+        <Collage />
         <ContactUs />
       </div>
     </div>

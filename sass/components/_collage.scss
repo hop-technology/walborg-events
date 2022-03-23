@@ -1,0 +1,25 @@
+.collage {
+  &--big {
+    display: block;
+    @include respond(desktop-L) {
+      display: none;
+    }
+  }
+
+  &--normal {
+    display: none;
+    @include respond(desktop-L) {
+      display: block;
+    }
+    @include respond(phone-XL) {
+      display: none;
+    }
+  }
+
+  &--small {
+    display: none;
+    @include respond(phone-XL) {
+      display: block;
+    }
+  }
+}

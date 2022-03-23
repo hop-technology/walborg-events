@@ -89,6 +89,36 @@ body {
   font-family: brandon-grotesque, sans-serif;
 }
 
+.collage--big {
+  display: block;
+}
+@media only screen and (max-width: 125em) {
+  .collage--big {
+    display: none;
+  }
+}
+.collage--normal {
+  display: none;
+}
+@media only screen and (max-width: 125em) {
+  .collage--normal {
+    display: block;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .collage--normal {
+    display: none;
+  }
+}
+.collage--small {
+  display: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .collage--small {
+    display: block;
+  }
+}
+
 .contact {
   background-color: #fae6e5;
   padding: 1rem;
