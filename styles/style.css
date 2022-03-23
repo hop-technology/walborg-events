@@ -149,6 +149,11 @@ body {
   border-radius: 0.3rem;
   background-color: #fae6e5;
 }
+@media (max-width: 768px) {
+  .contact {
+    margin: 5rem 0;
+  }
+}
 .contact__container {
   border: 0.4rem solid #ffffff;
   border-radius: 0.3rem;
