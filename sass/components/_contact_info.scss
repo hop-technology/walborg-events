@@ -1,7 +1,8 @@
-.contact__info {
+.contact_info {
   display: flex;
+  position: relative;
   flex-direction: row;
-  height: 80rem;
+  height: 110vh;
   justify-content: space-around;
   margin: 3rem;
 
@@ -31,17 +32,48 @@
   }
 
   &__tree {
+    display: flex;
     position: absolute;
-    right: -35rem;
-    top: 90rem;
+    top: 5rem;
+    right: -19rem;
     z-index: -100;
     transform: rotate(280deg) rotateY(180deg);
-  }
 
+    @include respond(desktop-M) {
+      width: 100rem;
+      top: 13rem;
+      right: -40rem;
+    }
+
+    @include respond(laptop-L) {
+      width: 70rem;
+      right: -16rem;
+      top: 0;
+    }
+
+    @include respond(tab-port) {
+      position: relative;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      width: 70rem;
+      right: 0%;
+      top: -40rem;
+      transform: rotate(-40deg) rotateY(180deg);
+    }
+
+    @include respond(phone-L) {
+      width: 55rem;
+    }
+    @include respond(phone-S) {
+      width: 40rem;
+      top: -26rem;
+    }
+  }
   &__image {
     margin-top: 20rem;
-    width: 30rem;
-    height: 30rem;
+    width: 300px;
+    height: 300px;
     border: 5px solid #fff;
     border-radius: 50%;
 
