@@ -4,6 +4,7 @@ import Venue from '../components/VenueInfo'
 import ContactInfo from '../components/ContactInfo'
 import ContactUs from '../components/ContactUs'
 import Collage from '../components/Collage'
+import WalborgOffer from '../components/WalborgOffer'
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <div className='wrapper'>
         <HeroSection />
         <Venue />
+        <WalborgOffer />
         <ContactInfo />
         <Collage />
         <ContactUs />

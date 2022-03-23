@@ -747,4 +747,199 @@ body {
   }
 }
 
+.walborg_offer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 27.9rem;
+  margin-bottom: 40rem;
+}
+@media only screen and (max-width: 125em) {
+  .walborg_offer {
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .walborg_offer {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+.walborg_offer button {
+  width: 17.2rem;
+  height: 7.1rem;
+}
+.walborg_offer__container {
+  align-items: center;
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: row;
+  height: 30rem;
+  width: 100%;
+}
+@media only screen and (max-width: 56.25em) {
+  .walborg_offer__container {
+    align-items: center;
+    margin-top: 30rem;
+  }
+}
+.walborg_offer__text {
+  width: 52rem;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+@media only screen and (max-width: 87.5em) {
+  .walborg_offer__text {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .walborg_offer__text {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 32.75em) {
+  .walborg_offer__text {
+    width: 22rem;
+    text-align: left;
+    font-size: 2rem;
+  }
+}
+.walborg_offer__text a {
+  color: inherit;
+}
+.walborg_offer__tree {
+  display: flex;
+  position: absolute;
+  left: 12rem;
+  z-index: -100;
+}
+@media only screen and (min-width: 187.5em) {
+  .walborg_offer__tree {
+    transform: rotate(280deg) rotateY(180deg) scale(150%);
+  }
+}
+@media only screen and (max-width: 187.5em) {
+  .walborg_offer__tree {
+    transform: rotate(280deg) rotateY(180deg) scale(120%);
+    right: -18rem;
+  }
+}
+@media only screen and (max-width: 162.5em) {
+  .walborg_offer__tree {
+    transform: rotate(280deg) rotateY(180deg) scale(120%);
+    right: -24rem;
+  }
+}
+@media only screen and (max-width: 125em) {
+  .walborg_offer__tree {
+    transform: rotate(280deg) rotateY(180deg) scale(100%);
+    top: 12rem;
+    right: -27rem;
+  }
+}
+@media only screen and (max-width: 112.5em) {
+  .walborg_offer__tree {
+    transform: rotate(280deg) rotateY(180deg) scale(100%);
+    top: 12rem;
+    right: -27rem;
+  }
+}
+@media only screen and (max-width: 87.5em) {
+  .walborg_offer__tree {
+    transform: rotate(280deg) rotateY(180deg) scale(70%);
+    top: 5rem;
+    right: -32rem;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .walborg_offer__tree {
+    transform: rotate(280deg) rotateY(180deg) scale(60%);
+    top: -10rem;
+    right: -44rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .walborg_offer__tree {
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    right: 37rem;
+    top: 123rem;
+    height: 0rem;
+    transform: rotate(60deg) rotateY(180deg) scale(80%);
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .walborg_offer__tree {
+    right: 31rem;
+    top: 122rem;
+  }
+}
+@media only screen and (max-width: 32.75em) {
+  .walborg_offer__tree {
+    transform: rotate(60deg) rotateY(180deg) scale(130%);
+    right: 22rem;
+    top: 110rem;
+  }
+}
+@media only screen and (max-width: 23.438em) {
+  .walborg_offer__tree {
+    right: 16rem;
+    top: 100rem;
+  }
+}
+.walborg_offer__image {
+  margin-top: 20rem;
+  width: 510px;
+  height: 510px;
+  border: 0.5rem solid #fff;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 125em) {
+  .walborg_offer__image {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 87.5em) {
+  .walborg_offer__image {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .walborg_offer__image {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .walborg_offer__image {
+    width: 500px;
+    height: 500px;
+    border-radius: 0.3rem;
+  }
+}
+@media only screen and (max-width: 32.75em) {
+  .walborg_offer__image {
+    display: flex;
+    width: auto;
+    height: auto;
+    border: 1rem solid #fff;
+  }
+}
+.walborg_offer__image img {
+  border-radius: 50%;
+}
+@media only screen and (max-width: 56.25em) {
+  .walborg_offer__image img {
+    border-radius: 0.3rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
