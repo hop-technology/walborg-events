@@ -4,8 +4,11 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
-  margin-bottom: 27.9rem;
-  margin-top: 40rem;
+  margin-bottom: 40rem;
+  margin-top: 27.9rem;
+  @include respond(tab-port) {
+   height: 24.7rem;
+  }
   @include respond(phone-L) {
     margin-top: 22rem;
   }
@@ -55,6 +58,13 @@
     top: -5rem;
     right: -19rem;
     z-index: -100;
+    @include respond(desktop-4K) {
+      transform: scale(150%);
+    }
+
+    @include respond(desktop-3K) {
+      transform: scale(120%);
+    }
 
     @include respond(desktop-M) {
       width: 100rem;
