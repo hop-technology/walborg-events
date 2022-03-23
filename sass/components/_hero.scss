@@ -45,21 +45,32 @@
     }
 
     @include respond(desktop-3K) {
+      transform: translateX(-52%);
       width: 300px;
       height: 300px;
     }
 
     @include respond(desktop-XL) {
+      transform: translateX(-50%);
+      top: -3rem;
       width: 240px;
       height: 240px;
     }
 
+    @include respond(desktop-L) {
+      top: -2.5rem;
+      width: 210px;
+      height: 210px;
+    }
+
     @include respond(desktop-M) {
+      top: -2.2rem;
       width: 190px;
       height: 190px;
     }
 
     @include respond(desktop-S) {
+      top: -1.7rem;
       width: 170px;
       height: 170px;
     }
@@ -71,8 +82,12 @@
     @include respond(laptop-M) {
       width: 120px;
       height: 120px;
-      top: -1.9rem;
       left: 50.9%;
+    }
+    @include respond(tab-port) {
+      top: -1.5rem;
+      width: 100px;
+      height: 100px;
     }
   }
 
@@ -81,14 +96,22 @@
     z-index: -1;
     height: calc(100vh - 80px);
     width: 100vw;
-    top: 6.9rem;
+    top: 11rem;
+
+    @include respond(desktop-XL) {
+      top: 10rem;
+    }
+
+    @include respond(desktop-L) {
+      top: 6rem;
+    }
 
     @include respond(laptop-L) {
-      top: 6.5rem;
+      top: 4rem;
     }
 
     @include respond(laptop-M) {
-      top: 6.2rem;
+      top: 3rem;
     }
 
     &--video {

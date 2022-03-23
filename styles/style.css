@@ -11,10 +11,26 @@
 html {
   font-size: 62.5%;
   /* allows user to zom in on page (change font size) px won't work*/
-  /*   @include respond(phone) {
-      // width < 600?
-      font-size: 30%; // 1 rem = 4.8px, 4.8/16 =30%
-    } */
+}
+@media only screen and (min-width: 187.5em) {
+  html {
+    font-size: 100%;
+  }
+}
+@media only screen and (max-width: 187.5em) {
+  html {
+    font-size: 100%;
+  }
+}
+@media only screen and (max-width: 162.5em) {
+  html {
+    font-size: 87.5%;
+  }
+}
+@media only screen and (max-width: 125em) {
+  html {
+    font-size: 75%;
+  }
 }
 @media only screen and (max-width: 75em) {
   html {
@@ -26,16 +42,15 @@ html {
     font-size: 50%;
   }
 }
-@media only screen and (max-width: 125em) {
-  html {
-    font-size: 75%;
-  }
-}
 
 body {
   box-sizing: border-box;
   overflow-x: hidden;
   background-color: #f5f2ed;
+}
+
+.wrapper {
+  overflow-x: hidden;
 }
 
 body {
@@ -248,7 +263,7 @@ body {
   width: 360px;
   height: 360px;
 }
-@media only screen and (max-width: 225em) {
+@media only screen and (min-width: 187.5em) {
   .hero__logo {
     width: 330px;
     height: 330px;
@@ -256,24 +271,36 @@ body {
 }
 @media only screen and (max-width: 187.5em) {
   .hero__logo {
+    transform: translateX(-52%);
     width: 300px;
     height: 300px;
   }
 }
 @media only screen and (max-width: 162.5em) {
   .hero__logo {
+    transform: translateX(-50%);
+    top: -3rem;
     width: 240px;
     height: 240px;
   }
 }
+@media only screen and (max-width: 125em) {
+  .hero__logo {
+    top: -2.5rem;
+    width: 210px;
+    height: 210px;
+  }
+}
 @media only screen and (max-width: 112.5em) {
   .hero__logo {
+    top: -2.2rem;
     width: 190px;
     height: 190px;
   }
 }
 @media only screen and (max-width: 102.5em) {
   .hero__logo {
+    top: -1.7rem;
     width: 170px;
     height: 170px;
   }
@@ -289,8 +316,14 @@ body {
   .hero__logo {
     width: 120px;
     height: 120px;
-    top: -1.9rem;
     left: 50.9%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .hero__logo {
+    top: -1.5rem;
+    width: 100px;
+    height: 100px;
   }
 }
 .hero__video-container {
@@ -298,16 +331,26 @@ body {
   z-index: -1;
   height: calc(100vh - 80px);
   width: 100vw;
-  top: 6.9rem;
+  top: 11rem;
+}
+@media only screen and (max-width: 162.5em) {
+  .hero__video-container {
+    top: 10rem;
+  }
+}
+@media only screen and (max-width: 125em) {
+  .hero__video-container {
+    top: 6rem;
+  }
 }
 @media only screen and (max-width: 87.5em) {
   .hero__video-container {
-    top: 6.5rem;
+    top: 4rem;
   }
 }
 @media only screen and (max-width: 75em) {
   .hero__video-container {
-    top: 6.2rem;
+    top: 3rem;
   }
 }
 .hero__video-container--video {

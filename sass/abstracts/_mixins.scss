@@ -74,7 +74,7 @@
   @if $breakpoint == desktop-4K {
     // 3600px
     // 3840px
-    @media only screen and (max-width: 225em) {
+    @media only screen and (min-width: 187.5em) {
       @content;
     }
   }
