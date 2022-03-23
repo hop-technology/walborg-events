@@ -6,39 +6,59 @@
     align-content: flex-start;
     justify-content: center;
     position: absolute;
-    top: -3rem;
+    top: -10rem;
     width: 100vw;
 
-    @include respond(desktop-M) {
-      top: -4rem;
+    @include respond(desktop-XL) {
+      top: -12rem;
+    }
+
+    @include respond(desktop-L) {
+      top: -12rem;
     }
 
     @include respond(laptop-L) {
-      top: -5rem;
+      top: -13rem;
     }
 
     @include respond(laptop-M) {
-      top: -6.2rem;
+      top: -14rem;
     }
 
     @include respond(tab-port) {
-      top: -12rem;
+      top: -15rem;
     }
   }
 
   &__logo {
     position: absolute;
     left: 50.5%;
-    transform: translateX(-50.5%);
-    top: -2.6rem;
+    transform: translateX(-53%);
+    top: -4rem;
     z-index: 2;
-    width: 210px;
-    height: 210px;
+    width: 360px;
+    height: 360px;
+
+    @include respond(desktop-4K) {
+      width: 330px;
+      height: 330px;
+    }
+
+    @include respond(desktop-3K) {
+      width: 300px;
+      height: 300px;
+    }
+
+    @include respond(desktop-XL) {
+      width: 240px;
+      height: 240px;
+    }
 
     @include respond(desktop-M) {
       width: 190px;
       height: 190px;
     }
+
     @include respond(desktop-S) {
       width: 170px;
       height: 170px;

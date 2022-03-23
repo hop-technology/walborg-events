@@ -54,8 +54,27 @@
     }
   }
   @if $breakpoint == desktop-L {
-    // 1800px
-    @media only screen and (min-width: 112.5em) {
+    // 1200px
+    @media only screen and (max-width: 125em) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-XL {
+    // 2600px
+    @media only screen and (max-width: 162.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-3K {
+    // 3000px
+    @media only screen and (max-width: 187.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-4K {
+    // 3600px
+    // 3840px
+    @media only screen and (max-width: 225em) {
       @content;
     }
   }

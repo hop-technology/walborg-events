@@ -1,8 +1,8 @@
 export const NavDesk = () => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
-    width='1920'
-    height='210'
+    width='3840'
+    height='420'
     viewBox='0 0 1921 210'>
     <g data-name='Group 471' opacity='1' stroke='#faaeaa'>
       <g data-name='Rectangle 66' fill='#faaeaa'>

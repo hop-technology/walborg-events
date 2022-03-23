@@ -26,7 +26,7 @@ html {
     font-size: 50%;
   }
 }
-@media only screen and (min-width: 112.5em) {
+@media only screen and (max-width: 125em) {
   html {
     font-size: 75%;
   }
@@ -211,37 +211,60 @@ body {
   align-content: flex-start;
   justify-content: center;
   position: absolute;
-  top: -3rem;
+  top: -10rem;
   width: 100vw;
 }
-@media only screen and (max-width: 112.5em) {
+@media only screen and (max-width: 162.5em) {
   .hero__nav {
-    top: -4rem;
+    top: -12rem;
+  }
+}
+@media only screen and (max-width: 125em) {
+  .hero__nav {
+    top: -12rem;
   }
 }
 @media only screen and (max-width: 87.5em) {
   .hero__nav {
-    top: -5rem;
+    top: -13rem;
   }
 }
 @media only screen and (max-width: 75em) {
   .hero__nav {
-    top: -6.2rem;
+    top: -14rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .hero__nav {
-    top: -12rem;
+    top: -15rem;
   }
 }
 .hero__logo {
   position: absolute;
   left: 50.5%;
-  transform: translateX(-50.5%);
-  top: -2.6rem;
+  transform: translateX(-53%);
+  top: -4rem;
   z-index: 2;
-  width: 210px;
-  height: 210px;
+  width: 360px;
+  height: 360px;
+}
+@media only screen and (max-width: 225em) {
+  .hero__logo {
+    width: 330px;
+    height: 330px;
+  }
+}
+@media only screen and (max-width: 187.5em) {
+  .hero__logo {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 162.5em) {
+  .hero__logo {
+    width: 240px;
+    height: 240px;
+  }
 }
 @media only screen and (max-width: 112.5em) {
   .hero__logo {
