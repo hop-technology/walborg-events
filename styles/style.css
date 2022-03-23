@@ -14,7 +14,7 @@ html {
 }
 @media only screen and (min-width: 187.5em) {
   html {
-    font-size: 100%;
+    font-size: 112.5%;
   }
 }
 @media only screen and (max-width: 187.5em) {
@@ -226,12 +226,12 @@ body {
   align-content: flex-start;
   justify-content: center;
   position: absolute;
-  top: -10rem;
+  top: -6rem;
   width: 100vw;
 }
 @media only screen and (max-width: 162.5em) {
   .hero__nav {
-    top: -12rem;
+    top: -9rem;
   }
 }
 @media only screen and (max-width: 125em) {
@@ -246,19 +246,19 @@ body {
 }
 @media only screen and (max-width: 75em) {
   .hero__nav {
-    top: -14rem;
+    top: -18rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .hero__nav {
-    top: -15rem;
+    top: -22rem;
   }
 }
 .hero__logo {
   position: absolute;
   left: 50.5%;
   transform: translateX(-53%);
-  top: -4rem;
+  top: -2rem;
   z-index: 2;
   width: 360px;
   height: 360px;
@@ -278,8 +278,8 @@ body {
 }
 @media only screen and (max-width: 162.5em) {
   .hero__logo {
-    transform: translateX(-50%);
-    top: -3rem;
+    transform: translateX(-51%);
+    top: -2rem;
     width: 240px;
     height: 240px;
   }
@@ -300,6 +300,7 @@ body {
 }
 @media only screen and (max-width: 102.5em) {
   .hero__logo {
+    transform: translateX(-50%);
     top: -1.7rem;
     width: 170px;
     height: 170px;
@@ -314,6 +315,7 @@ body {
 }
 @media only screen and (max-width: 75em) {
   .hero__logo {
+    transform: translateX(-50%);
     width: 120px;
     height: 120px;
     left: 50.9%;
@@ -322,8 +324,8 @@ body {
 @media only screen and (max-width: 56.25em) {
   .hero__logo {
     top: -1.5rem;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 190px;
   }
 }
 .hero__video-container {
@@ -331,11 +333,11 @@ body {
   z-index: -1;
   height: calc(100vh - 80px);
   width: 100vw;
-  top: 11rem;
+  top: 7rem;
 }
 @media only screen and (max-width: 162.5em) {
   .hero__video-container {
-    top: 10rem;
+    top: 7rem;
   }
 }
 @media only screen and (max-width: 125em) {
