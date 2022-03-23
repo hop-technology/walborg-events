@@ -24,7 +24,7 @@ const ContactInfo = () => {
         </div>
       </div>
       <div className='contact_info__image'>
-        <Image src='/madhatters.png' alt='Walborg event' height={300} width={300} />
+        <Image src='/madhatters.png' alt='Walborg event' height={500} width={500} />
       </div>
       <div className='contact_info__tree'>
         <Image src='/white-tree.svg' alt='Walborg event' height={1030} width={1019} />

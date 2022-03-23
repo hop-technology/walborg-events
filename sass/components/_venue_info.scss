@@ -3,8 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  margin-top: 27.9rem;
+  height: 100%;
+  margin-bottom: 27.9rem;
+  margin-top: 40rem;
   @include respond(phone-L) {
     margin-top: 22rem;
   }
@@ -87,22 +88,22 @@
     }
   }
 
-  &__coverbox {
-    position: absolute;
-    height: 20rem;
-    width: 100%;
-    z-index: -99;
-    top: 53rem;
-    background-color: $color-bg-primary;
+  // &__coverbox {
+  //   position: absolute;
+  //   height: 20rem;
+  //   width: 100%;
+  //   z-index: -99;
+  //   top: 53rem;
+  //   background-color: $color-bg-primary;
 
-    @include respond(desktop-M) {
-      top: 63rem;
-    }
-    @include respond(laptop-L) {
-      top: 47rem;
-    }
-    @include respond(tab-port) {
-      top: 46rem;
-    }
-  }
+  //   @include respond(desktop-M) {
+  //     top: 63rem;
+  //   }
+  //   @include respond(laptop-L) {
+  //     top: 47rem;
+  //   }
+  //   @include respond(tab-port) {
+  //     top: 46rem;
+  //   }
+  // }
 }
