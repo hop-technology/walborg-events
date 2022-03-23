@@ -1,4 +1,5 @@
 import Head from "next/head";
+import ContactInfo from "../components/ContactInfo";
 import ContactUs from "../components/contactUs";
 import Venue from "../components/VenueInfo";
 
@@ -15,6 +16,7 @@ const Index = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Venue />
+      <ContactInfo />
       <ContactUs />
     </div>
   );

@@ -211,11 +211,6 @@ body {
   right: -200px;
   z-index: -100;
 }
-@media (max-width: 768px) {
-  .venue__tree {
-    display: none;
-  }
-}
 .venue__coverbox {
   height: 150px;
   width: 100%;
@@ -251,6 +246,50 @@ body {
   font-size: 2rem;
   font-weight: 500;
   font-family: brandon-grotesque, sans-serif;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: row;
+  height: 80rem;
+  justify-content: space-around;
+  margin: 3rem;
+}
+.contact__info button {
+  width: 17.2rem;
+  height: 7.1rem;
+}
+.contact__info__container {
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-left: 50px;
+}
+.contact__info__text {
+  width: 450px;
+  margin-bottom: 1rem;
+}
+.contact__info__text a {
+  color: inherit;
+}
+.contact__info__tree {
+  position: absolute;
+  right: -35rem;
+  top: 90rem;
+  z-index: -100;
+  transform: rotate(280deg) rotateY(180deg);
+}
+.contact__info__image {
+  margin-top: 20rem;
+  width: 30rem;
+  height: 30rem;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+.contact__info__image img {
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

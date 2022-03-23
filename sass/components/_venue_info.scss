@@ -33,10 +33,6 @@
     right: -200px;
     z-index: -100;
 
-    // Temporary fix. needs to be removed when fixing responsiveness, currently breaks tests on desktop.
-    @media (max-width: 768px) {
-      display: none;
-    }
   }
 
   &__coverbox {
