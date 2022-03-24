@@ -1,0 +1,53 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__contact {
+    display: flex;
+    justify-content: space-around;
+    margin: 10rem 0 10rem 0;
+    width: 50%;
+    border: 1px solid rgb(255, 0, 0);
+    &--phone {
+    }
+    &--email {
+    }
+  }
+
+  &__shape {
+    position: relative;
+    bottom: 0;
+    border: 1px solid rgb(30, 255, 0);
+    padding-bottom: -4rem;
+    &--walborg {
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    &--text {
+      position: absolute;
+      top: 41rem;
+      left: 50%;
+      transform: translate(-50%);
+      text-transform: uppercase;
+      color: #F4F4F4;
+    }
+  }
+
+  &__partners {
+    border: 1px solid rgb(38, 0, 255);
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    top: 50rem;
+    left: 50%;
+    transform: translate(-50%);
+    color: #F4F4F4;
+    &--logo {
+      height: 15rem;
+      width: 15rem;
+    }
+  }
+}
