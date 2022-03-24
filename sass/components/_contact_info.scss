@@ -15,6 +15,7 @@
     justify-content: space-around;
   }
   @include respond(tab-port) {
+    margin-top: -24rem;
     justify-content: center;
     flex-direction: column-reverse;
   }

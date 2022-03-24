@@ -739,6 +739,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .contact_info {
+    margin-top: -24rem;
     justify-content: center;
     flex-direction: column-reverse;
   }
