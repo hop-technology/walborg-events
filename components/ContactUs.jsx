@@ -8,7 +8,7 @@ const ContactForm = () => {
   const handleInput = (e) => {
     e.target.setCustomValidity('')
   }
-  
+
   return (
     <>
       <div className='contact'>
