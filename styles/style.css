@@ -311,23 +311,42 @@ body {
   position: relative;
   bottom: 0;
   border: 1px solid #1eff00;
-  padding-bottom: -4rem;
 }
 .footer__shape--walborg {
   position: absolute;
   top: 1rem;
   left: 50%;
   transform: translate(-50%);
+  height: 70rem;
+  width: 18%;
 }
 .footer__shape--text {
   position: absolute;
-  top: 41rem;
+  top: 55%;
   left: 50%;
+  width: 100%;
+  padding: 0 20%;
+  text-align: center;
   font-size: 1.8rem;
   letter-spacing: 2px;
   transform: translate(-50%);
   text-transform: uppercase;
   color: #f4f4f4;
+}
+@media only screen and (max-width: 162.5em) {
+  .footer__shape--text {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 125em) {
+  .footer__shape--text {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 87.5em) {
+  .footer__shape--text {
+    font-size: 1rem;
+  }
 }
 .footer__partners {
   border: 1px solid #2600ff;
