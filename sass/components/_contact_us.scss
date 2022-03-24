@@ -97,7 +97,7 @@
   &__part2 {
     width: 36rem;
     height: 27.3rem;
-     @include respond(phone-M) {
+    @include respond(phone-M) {
       width: 100%;
     }
 
