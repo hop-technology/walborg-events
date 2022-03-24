@@ -774,6 +774,7 @@ body {
 }
 .walborg_offer__container {
   align-items: center;
+  justify-content: space-evenly;
   margin-top: 20rem;
   display: flex;
   flex-direction: row;
@@ -786,10 +787,23 @@ body {
     margin-top: 30rem;
   }
 }
+.walborg_offer__text_container {
+  width: 74rem;
+  height: 44.2rem;
+  background-color: #fae6e5;
+  margin-top: 15rem;
+}
 .walborg_offer__text {
-  width: 52rem;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.4rem solid #ffffff;
+  border-radius: 0.3rem;
+  opacity: 1;
+  height: 43rem;
+  margin: 0.5rem;
   font-size: 2.2rem;
+  padding: 6rem;
 }
 @media only screen and (max-width: 87.5em) {
   .walborg_offer__text {

@@ -23,21 +23,41 @@
   
     &__container {
       align-items: center;
+      justify-content: space-evenly;
       margin-top: 20rem;
       display: flex;
       flex-direction: row;
       height: 30rem;
       width: 100%;
+      
+     
       @include respond(tab-port) {
         align-items: center;
         margin-top: 30rem;
       }
     }
   
+
+    &__text_container {
+      width: 74rem;
+      height: 44.2rem;
+      background-color: $color-main;
+      margin-top: 15rem;
+    }
+
+
     &__text {
-      width: 52rem;
-      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 0.4rem solid #ffffff;
+      border-radius: 0.3rem;
+      opacity: 1;
+      height: 43rem;
+      margin: 0.5rem;
       font-size: 2.2rem;
+      padding: 6rem;
+      
   
       @include respond(laptop-L) {
         font-size: 1.8rem;
