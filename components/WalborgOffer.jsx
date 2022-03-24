@@ -14,7 +14,7 @@ const WalborgOffer = () => {
             />
           </div>
           <div className='walborg_offer__text_container'>
-            <div className='walborg_offer__text'>
+            <div className='walborg_offer__text_container--text'>
               <p>
                 Walborg kan skräddarsy ditt evenemang efter dina önskemål. Vi
                 levererar förtärning, teknik, ljud, ljus, scen och möblering för
