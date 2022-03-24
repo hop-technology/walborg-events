@@ -7,10 +7,23 @@
     justify-content: space-around;
     margin: 10rem 0 10rem 0;
     width: 50%;
-    border: 1px solid rgb(255, 0, 0);
-    &--phone {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    @include respond(desktop-XL) {
+      font-size: 1.8rem;
     }
-    &--email {
+    @include respond(desktop-L) {
+      font-size: 1.7rem;
+    }
+    @include respond(laptop-L) {
+      width: 65%;
+    }
+    @include respond(tab-port) {
+      flex-direction: column;
+      height: 9rem;
+      width: auto;
+      text-align: left;
     }
   }
 
@@ -29,9 +42,11 @@
       position: absolute;
       top: 41rem;
       left: 50%;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
       transform: translate(-50%);
       text-transform: uppercase;
-      color: #F4F4F4;
+      color: #f4f4f4;
     }
   }
 
@@ -44,7 +59,11 @@
     top: 50rem;
     left: 50%;
     transform: translate(-50%);
-    color: #F4F4F4;
+    color: #f4f4f4;
+
+    :nth-child(2) {
+      margin-top: 2rem;
+    }
     &--logo {
       height: 15rem;
       width: 15rem;
