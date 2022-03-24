@@ -850,9 +850,10 @@ body {
 }
 @media only screen and (max-width: 125em) {
   .walborg_offer__tree {
-    transform: rotate(280deg) rotateY(180deg) scale(100%);
-    top: 12rem;
-    right: -27rem;
+    transform: rotate(10deg) rotateY(180deg) scale(360%);
+    top: 55rem;
+    right: 120rem;
+    z-index: -1;
   }
 }
 @media only screen and (max-width: 112.5em) {

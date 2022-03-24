@@ -29,15 +29,15 @@ const WalborgOffer = () => {
               </p>
             </div>
           </div>
+          <div className='walborg_offer__tree'>
+            <Image
+              src='/white-tree.svg'
+              alt='Walborg event'
+              height={1030}
+              width={1019}
+            />
+          </div>
         </div>
-        {/*    <div className='walborg_offer__tree'>
-          <Image
-            src='/white-tree.svg'
-            alt='Walborg event'
-            height={1030}
-            width={1019}
-          />
-        </div> */}
       </div>
     </>
   )
