@@ -16,6 +16,14 @@ const Footer = () => {
             alt='footer'
           />
         </div>
+        <div className='footer__shape--mobile'>
+          <Image
+            src='/mob-footer.svg'
+            width='900px'
+            height='1460px'
+            alt='footer'
+          />
+        </div>
         <div className='footer__shape--walborg'>
           <Image
             src='/walborg-event.svg'
