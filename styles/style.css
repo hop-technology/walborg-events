@@ -601,12 +601,7 @@ body {
 }
 @media only screen and (max-width: 32.75em) {
   .venue {
-    margin-top: 22rem;
-  }
-}
-@media only screen and (max-width: 23.438em) {
-  .venue {
-    margin-top: 17rem;
+    margin-top: 10rem;
   }
 }
 @media only screen and (max-width: 32.75em) {
@@ -718,6 +713,7 @@ body {
 @media only screen and (max-width: 20em) {
   .venue__tree {
     width: 40rem;
+    top: -26rem;
   }
 }
 
@@ -958,13 +954,20 @@ body {
   margin-top: 15rem;
   border-radius: 0.3rem;
 }
-@media only screen and (max-width: 32.75em) {
+@media only screen and (max-width: 56.25em) {
   .walborg_offer__text_container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: auto;
     height: auto;
+    margin: 10rem;
+  }
+}
+@media only screen and (max-width: 32.75em) {
+  .walborg_offer__text_container {
+    margin: 10rem 1rem;
+    width: auto;
   }
 }
 .walborg_offer__text_container--text {
@@ -973,8 +976,7 @@ body {
   justify-content: center;
   border: 0.4rem solid #ffffff;
   border-radius: 0.3rem;
-  opacity: 1;
-  height: 43rem;
+  height: auto;
   margin: 0.7rem;
   font-size: 2.2rem;
   padding: 6rem;
@@ -986,13 +988,14 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .walborg_offer__text_container--text {
-    text-align: center;
+    z-index: 6;
+    text-align: left;
+    font-size: 2rem;
   }
 }
-@media only screen and (max-width: 32.75em) {
+@media only screen and (max-width: 23.438em) {
   .walborg_offer__text_container--text {
-    width: 95%;
-    text-align: left;
+    font-size: 1.8rem;
   }
 }
 .walborg_offer__tree {
@@ -1021,30 +1024,13 @@ body {
     align-content: center;
     align-items: center;
     justify-content: center;
-    right: 37rem;
-    top: 123rem;
     height: 0rem;
-    transform: rotate(60deg) rotateY(180deg) scale(80%);
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .walborg_offer__tree {
-    right: 31rem;
-    top: 122rem;
-  }
-}
-@media only screen and (max-width: 32.75em) {
-  .walborg_offer__tree {
-    transform: rotate(-40deg) rotateY(180deg) scale(130%);
-    top: -20rem;
-    left: 0rem;
-    z-index: 1;
-  }
-}
-@media only screen and (max-width: 23.438em) {
-  .walborg_offer__tree {
-    right: 16rem;
-    top: 100rem;
+    width: 30rem;
+    left: 0%;
+    top: -20.2rem;
+    transform: translateX(0%) rotate(40deg);
+    z-index: 5;
+    opacity: 0.7;
   }
 }
 .walborg_offer__image {

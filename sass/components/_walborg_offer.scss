@@ -6,7 +6,7 @@
   top: -4rem;
   justify-content: space-evenly;
   align-items: center;
-  
+
   // @include respond(tab-port) {
   //   justify-content: center;
   //   flex-direction: column;
@@ -34,14 +34,20 @@
     height: auto;
     background-color: $color-main;
     margin-top: 15rem;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
 
-    @include respond(phone-L) {
+    @include respond(tab-port) {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: auto;
       height: auto;
+      margin: 10rem;
+    }
+
+    @include respond(phone-L) {
+      margin: 10rem 1rem;
+      width: auto;
     }
 
     &--text {
@@ -50,29 +56,27 @@
       justify-content: center;
       border: 0.4rem solid #ffffff;
       border-radius: 0.3rem;
-      opacity: 1;
-      height: 43rem;
+      height: auto;
       margin: 0.7rem;
       font-size: 2.2rem;
       padding: 6rem;
-  
+
       @include respond(desktop-L) {
         font-size: 1.8rem;
       }
-  
+
       @include respond(tab-port) {
-        text-align: center;
-      }
-  
-      @include respond(phone-L) {
-        width: 95%;
+        z-index: 6;
         text-align: left;
+        font-size: 2rem;
+      }
+
+      @include respond(phone-M) {
+        font-size: 1.8rem;
       }
     }
-  
   }
 
- 
   &__tree {
     display: flex;
     position: absolute;
@@ -95,31 +99,16 @@
       align-content: center;
       align-items: center;
       justify-content: center;
-      right: 37rem;
-      top: 123rem;
       height: 0rem;
-      transform: rotate(60deg) rotateY(180deg) scale(80%);
-    }
-
-    @include respond(phone-XL) {
-      right: 31rem;
-      top: 122rem;
-    }
-
-    @include respond(phone-L) {
-      transform: rotate(-40deg) rotateY(180deg) scale(130%);
-      top: -20rem;
-      left: 0rem;
-      z-index: 1;
-    }
-
-    @include respond(phone-M) {
-      right: 16rem;
-      top: 100rem;
-    }
-    @include respond(phone-S) {
+      width: 30rem;
+      left: 0%;
+      top: -20.2rem;
+      transform: translateX(0%) rotate(40deg) ;
+      z-index: 5;
+      opacity: .7;
     }
   }
+  
   &__image {
     margin-top: 14rem;
     width: 510px;

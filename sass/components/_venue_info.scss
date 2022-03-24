@@ -11,10 +11,7 @@
    margin-top: 15rem;
   }
   @include respond(phone-L) {
-    margin-top: 22rem;
-  }
-  @include respond(phone-M) {
-    margin-top: 17rem;
+    margin-top: 10rem;
   }
 
   &__info {
@@ -111,7 +108,7 @@
     }
     @include respond(phone-S) {
       width: 40rem;
-      // top: -26rem;
+      top: -26rem;
     }
   }
 }
