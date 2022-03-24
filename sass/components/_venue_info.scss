@@ -106,10 +106,11 @@
 
     @include respond(phone-L) {
       width: 55rem;
+      top: -32rem;
     }
     @include respond(phone-S) {
       width: 40rem;
-      top: -26rem;
+      // top: -26rem;
     }
   }
 }

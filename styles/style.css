@@ -695,12 +695,12 @@ body {
 @media only screen and (max-width: 32.75em) {
   .venue__tree {
     width: 55rem;
+    top: -32rem;
   }
 }
 @media only screen and (max-width: 20em) {
   .venue__tree {
     width: 40rem;
-    top: -26rem;
   }
 }
 
@@ -924,6 +924,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .walborg_offer__container {
+    flex-direction: column;
     align-items: center;
     margin-top: 30rem;
   }
@@ -1059,6 +1060,7 @@ body {
     width: 500px;
     height: 500px;
     border-radius: 0.3rem;
+    margin-top: -32rem;
   }
 }
 @media only screen and (max-width: 32.75em) {
@@ -1067,6 +1069,7 @@ body {
     width: auto;
     height: auto;
     border: 1rem solid #fff;
+    margin-top: -30rem;
   }
 }
 .walborg_offer__image img {

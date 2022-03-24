@@ -9,7 +9,7 @@
   
   // @include respond(tab-port) {
   //   justify-content: center;
-  //   flex-direction: column-reverse;
+  //   flex-direction: column;
   // }
 
   &__container {
@@ -20,6 +20,7 @@
     width: 100%;
 
     @include respond(tab-port) {
+      flex-direction: column;
       align-items: center;
       margin-top: 30rem;
     }
@@ -145,6 +146,7 @@
       width: 500px;
       height: 500px;
       border-radius: 0.3rem;
+      margin-top: -32rem;
     }
 
     @include respond(phone-L) {
@@ -152,6 +154,7 @@
       width: auto;
       height: auto;
       border: 1rem solid #fff;
+      margin-top: -30rem;
     }
 
     img {
