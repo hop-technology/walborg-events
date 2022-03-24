@@ -989,60 +989,19 @@ body {
     text-align: left;
   }
 }
-.walborg_offer__text a {
-  color: inherit;
-}
 .walborg_offer__tree {
   display: flex;
   position: absolute;
-  left: 12rem;
+  left: -3rem;
+  top: 75%;
   z-index: -100;
-}
-@media only screen and (min-width: 187.5em) {
-  .walborg_offer__tree {
-    transform: rotate(280deg) rotateY(180deg) scale(150%);
-  }
+  height: 80%;
+  width: 23%;
+  transform: rotateY(180deg) scale(300%);
 }
 @media only screen and (max-width: 187.5em) {
   .walborg_offer__tree {
-    transform: rotate(280deg) rotateY(180deg) scale(120%);
-    right: -18rem;
-  }
-}
-@media only screen and (max-width: 162.5em) {
-  .walborg_offer__tree {
-    transform: rotate(20deg) rotateY(180deg) scale(320%);
-    top: 50rem;
-    right: 130rem;
-  }
-}
-@media only screen and (max-width: 125em) {
-  .walborg_offer__tree {
-    transform: rotate(20deg) rotateY(180deg) scale(390%);
-    top: 55rem;
-    right: 123rem;
-    z-index: -1;
-  }
-}
-@media only screen and (max-width: 112.5em) {
-  .walborg_offer__tree {
-    transform: rotate(280deg) rotateY(180deg) scale(100%);
-    top: 12rem;
-    right: -27rem;
-  }
-}
-@media only screen and (max-width: 87.5em) {
-  .walborg_offer__tree {
-    transform: rotate(280deg) rotateY(180deg) scale(70%);
-    top: 5rem;
-    right: -32rem;
-  }
-}
-@media only screen and (max-width: 75em) {
-  .walborg_offer__tree {
-    transform: rotate(280deg) rotateY(180deg) scale(60%);
-    top: -10rem;
-    right: -44rem;
+    left: -4rem;
   }
 }
 @media only screen and (max-width: 56.25em) {

@@ -78,56 +78,20 @@
       width: 95%;
       text-align: left;
     }
-
-    a {
-      color: inherit;
-    }
   }
 
   &__tree {
     display: flex;
     position: absolute;
-    left: 12rem;
+    left: -3rem;
+    top: 75%;
     z-index: -100;
-
-    @include respond(desktop-4K) {
-      transform: rotate(280deg) rotateY(180deg) scale(150%);
-    }
+    height: 80%;
+    width: 23%;
+    transform: rotateY(180deg) scale(300%);
 
     @include respond(desktop-3K) {
-      transform: rotate(280deg) rotateY(180deg) scale(120%);
-      right: -18rem;
-    }
-
-    @include respond(desktop-XL) {
-      transform: rotate(20deg) rotateY(180deg) scale(320%);
-      top: 50rem;
-      right: 130rem;
-    }
-
-    @include respond(desktop-L) {
-      transform: rotate(20deg) rotateY(180deg) scale(390%);
-      top: 55rem;
-      right: 123rem;
-      z-index: -1;
-    }
-
-    @include respond(desktop-M) {
-      transform: rotate(280deg) rotateY(180deg) scale(100%);
-      top: 12rem;
-      right: -27rem;
-    }
-
-    @include respond(laptop-L) {
-      transform: rotate(280deg) rotateY(180deg) scale(70%);
-      top: 5rem;
-      right: -32rem;
-    }
-
-    @include respond(laptop-M) {
-      transform: rotate(280deg) rotateY(180deg) scale(60%);
-      top: -10rem;
-      right: -44rem;
+      left: -4rem;
     }
 
     @include respond(tab-port) {
