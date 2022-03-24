@@ -8,6 +8,7 @@
   margin-top: 27.9rem;
   @include respond(tab-port) {
    height: 24.7rem;
+   margin-top: 15rem;
   }
   @include respond(phone-L) {
     margin-top: 22rem;
