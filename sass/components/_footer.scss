@@ -10,6 +10,13 @@
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 2px;
+
+    a {
+      color: $color-text-dark;
+      &:hover {
+        color: $color-text-hover;
+      }
+    }
     @include respond(desktop-XL) {
       font-size: 1.8rem;
     }

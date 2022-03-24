@@ -284,6 +284,12 @@ body {
   font-weight: 500;
   letter-spacing: 2px;
 }
+.footer__contact a {
+  color: #707070;
+}
+.footer__contact a:hover {
+  color: #464545;
+}
 @media only screen and (max-width: 162.5em) {
   .footer__contact {
     font-size: 1.8rem;

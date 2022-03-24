@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='footer'>
       <div className='footer__contact'>
         <p>Telefon: 073-600 44 68</p>
-        <p>Email: Event@WalborgVentures.com</p>
+        <a href='mailto: event@walborgventures.com'>Email: Event@WalborgVentures.com</a>
       </div>
       <div className='footer__shape'>
         <div className='footer__shape--desktop'>
