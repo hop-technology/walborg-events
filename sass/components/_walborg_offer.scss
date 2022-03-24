@@ -34,6 +34,9 @@
       align-items: center;
       margin-top: 30rem;
     }
+    @include respond(phone-L) {
+      flex-direction: column;
+    }
   }
 
   &__text_container {
@@ -41,6 +44,14 @@
     height: 44.2rem;
     background-color: $color-main;
     margin-top: 15rem;
+
+    @include respond(phone-L) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: auto;
+      height: auto;
+    }
   }
 
   &__text {
@@ -64,9 +75,8 @@
     }
 
     @include respond(phone-L) {
-      width: 22rem;
+      width: 95%;
       text-align: left;
-      font-size: 2rem;
     }
 
     a {
@@ -90,14 +100,15 @@
     }
 
     @include respond(desktop-XL) {
-      transform: rotate(280deg) rotateY(180deg) scale(120%);
-      right: -24rem;
+      transform: rotate(20deg) rotateY(180deg) scale(320%);
+      top: 50rem;
+      right: 130rem;
     }
 
     @include respond(desktop-L) {
-      transform: rotate(10deg) rotateY(180deg) scale(360%);
+      transform: rotate(20deg) rotateY(180deg) scale(390%);
       top: 55rem;
-      right: 120rem;
+      right: 123rem;
       z-index: -1;
     }
 
@@ -136,9 +147,10 @@
     }
 
     @include respond(phone-L) {
-      transform: rotate(60deg) rotateY(180deg) scale(130%);
-      right: 22rem;
-      top: 110rem;
+      transform: rotate(-40deg) rotateY(180deg) scale(130%);
+      top: -20rem;
+      left: 0rem;
+      z-index: 1;
     }
 
     @include respond(phone-M) {
