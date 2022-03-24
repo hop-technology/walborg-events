@@ -1,24 +1,45 @@
 .contact {
+  display: flex;
   background-color: #fae6e5;
   padding: 1rem;
-  margin: 5rem 25rem;
+  margin: 5rem auto;
   border-radius: 0.3rem;
   background-color: $color-main;
+  width: 100rem;
 
-  @media (max-width: 768px) {
-    margin: 5rem 0;
+  @include respond(tab-port) {
+    width: 54rem;
+  }
+
+  @include respond(phone-L) {
+    width: 100%;
   }
 
   &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     border: 0.4rem solid #ffffff;
     border-radius: 0.3rem;
     opacity: 1;
     padding: 7.5rem;
+
+    @include respond(phone-L) {
+      padding: 7.5rem 1rem;
+    }
+    @include respond(phone-M) {
+      justify-content: center;
+    }
   }
 
   &__title {
     font-size: 4.2rem;
     font-weight: 500;
+    width: 100%;
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
   }
 }
 
@@ -28,10 +49,25 @@
   margin-top: 2rem;
   justify-content: space-between;
 
+  @include respond(phone-L) {
+    justify-content: center;
+  }
+
+  @include respond(phone-M) {
+    width: 80%;
+  }
+
   &__input {
     &:not(:last-child) {
       margin-bottom: 2.6rem;
     }
+
+    @include respond(tab-port) {
+      &:last-child {
+        margin-bottom: 2.6rem;
+      }
+    }
+
     input {
       padding-left: 0.5rem;
       width: 100%;
@@ -53,11 +89,17 @@
 
   &__part1 {
     width: 36rem;
+    @include respond(phone-M) {
+      width: 100%;
+    }
   }
 
   &__part2 {
     width: 36rem;
     height: 27.3rem;
+    @include respond(phone-M) {
+      width: 100%;
+    }
 
     textarea {
       width: 100%;

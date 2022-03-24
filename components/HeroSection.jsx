@@ -6,8 +6,16 @@ const HeroSection = () => {
   return (
     <>
       <div className='hero'>
-        <div className='hero__nav'>
+        <div className='hero__nav--desktop'>
           <NavDesk />
+        </div>
+        <div className='hero__nav--mobile'>
+        <Image
+            src='/mobile-nav.svg'
+            width='900px'
+            height='394.7px'
+            alt='Walborg event'
+          />
         </div>
         <div className='hero__logo'>
           <Image

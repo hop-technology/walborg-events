@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection'
 import Venue from '../components/VenueInfo'
 import ContactInfo from '../components/ContactInfo'
 import Collage from '../components/Collage'
+import WalborgOffer from '../components/WalborgOffer'
 import ContactUs from '../components/ContactUs'
 import Footer from '../components/Footer'
 
@@ -18,6 +19,7 @@ const Index = () => {
       <div className='wrapper'>
         <HeroSection />
         <Venue />
+        <WalborgOffer />
         <ContactInfo />
         <Collage />
         <ContactUs />

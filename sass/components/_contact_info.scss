@@ -6,12 +6,16 @@
   justify-content: space-evenly;
   align-items: center;
   margin-top: 27.9rem;
-  margin-bottom: 40rem;
+  margin-bottom: 30rem;
 
+  @include respond(desktop-3K) {
+    margin-top: 10rem;
+  }
   @include respond(desktop-L) {
     justify-content: space-around;
   }
   @include respond(tab-port) {
+    margin-top: -24rem;
     justify-content: center;
     flex-direction: column-reverse;
   }
