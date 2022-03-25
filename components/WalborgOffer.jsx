@@ -7,7 +7,7 @@ const WalborgOffer = () => {
         <div className='walborg_offer__container'>
           <div className='walborg_offer__image'>
             <Image
-              src='/pinkguy.png'
+              src='/pinkguy-800.webp'
               alt='Walborg event'
               height={600}
               width={600}

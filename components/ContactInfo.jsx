@@ -27,7 +27,7 @@ const ContactInfo = () => {
         </div>
         <div className='contact_info__image'>
           <Image
-            src='/madhatters.png'
+            src='/madhatter-800.webp'
             alt='Walborg event'
             height={600}
             width={600}
