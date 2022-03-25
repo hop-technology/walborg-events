@@ -23,7 +23,7 @@ const Index = () => {
           content='Gothenburg, event, conference, party, parties, training, meetings, walborg, Göteborg, event, konferens, fest, fester, träning, möten, Walborg '
         />
         <meta name='robots' content='index, follow' />
-        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
         <meta name='author' content='HOP Technologies AB' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
