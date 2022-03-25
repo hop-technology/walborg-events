@@ -855,6 +855,7 @@ body {
     margin-top: -24rem;
     justify-content: center;
     flex-direction: column-reverse;
+    margin-bottom: 12rem;
   }
 }
 .contact_info button {
@@ -872,7 +873,17 @@ body {
 @media only screen and (max-width: 56.25em) {
   .contact_info__container {
     align-items: center;
-    margin-top: 30rem;
+    margin-top: 11rem;
+    border: #fae6e5 0.5rem solid;
+    border-radius: 0.3rem;
+    padding: 3rem;
+    background-color: #f1eee9;
+  }
+}
+@media only screen and (max-width: 32.75em) {
+  .contact_info__container {
+    height: 40rem;
+    padding: 3rem 6rem;
   }
 }
 .contact_info__text {
@@ -955,33 +966,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .contact_info__tree {
-    position: relative;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    right: 37rem;
-    top: 123rem;
-    height: 0rem;
-    transform: rotate(60deg) rotateY(180deg) scale(80%);
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .contact_info__tree {
-    right: 31rem;
-    top: 122rem;
-  }
-}
-@media only screen and (max-width: 32.75em) {
-  .contact_info__tree {
-    transform: rotate(60deg) rotateY(180deg) scale(130%);
-    right: 22rem;
-    top: 110rem;
-  }
-}
-@media only screen and (max-width: 23.438em) {
-  .contact_info__tree {
-    right: 16rem;
-    top: 100rem;
+    display: none;
   }
 }
 .contact_info__image {
