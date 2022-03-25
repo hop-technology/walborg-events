@@ -20,8 +20,8 @@ const HeroSection = () => {
         <div className='hero__logo'>
           <Image
             src='/walborg-event.svg'
-            width='450px'
-            height='450px'
+            width='300px'
+            height='300px'
             alt='Walborg event'
           />
         </div>
