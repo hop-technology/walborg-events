@@ -25,6 +25,25 @@ const Index = () => {
         <meta name='robots' content='index, follow' />
         <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
         <meta name='author' content='HOP Technologies AB' />
+        {/* Open Graph / Facebook  */}
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://walborgevent.com/' />
+        <meta property='og:title' content='Walborg Events' />
+        <meta
+          property='og:description'
+          content='Välkommen till en magisk oas i centrala Göteborg! Här arrangerar vi allt från utbildningar, konferenser till stora fester. '
+        />
+        <meta property='og:image' content='' />
+
+        {/* <!-- Twitter --> */}
+        <meta property='twitter:card' content='summary_large_image' />
+        <meta property='twitter:url' content='https://walborgevent.com/' />
+        <meta property='twitter:title' content='Walborg Events' />
+        <meta
+          property='twitter:description'
+          content='Välkommen till en magisk oas i centrala Göteborg! Här arrangerar vi allt från utbildningar, konferenser till stora fester. '
+        />
+        <meta property='twitter:image' content='' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <div className='wrapper'>

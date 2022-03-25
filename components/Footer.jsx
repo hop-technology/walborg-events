@@ -5,7 +5,9 @@ const Footer = () => {
     <div className='footer'>
       <div className='footer__contact'>
         <p>Telefon: 073-600 44 68</p>
-        <a href='mailto: event@walborgventures.com'>Email: Event@WalborgVentures.com</a>
+        <a href='mailto: event@walborgventures.com'>
+          Email: Event@WalborgVentures.com
+        </a>
       </div>
       <div className='footer__shape'>
         <div className='footer__shape--desktop'>
@@ -38,30 +40,36 @@ const Footer = () => {
         <div className='footer__partners'>
           <div className='footer__partners--logo'>
             {' '}
-            <Image
-              src='/hop-logo.svg'
-              height='300px'
-              width='300px'
-              alt='hop technology logo'
-            />
+            <a href='https://hoptech.se' target='_blank'>
+              <Image
+                src='/hop-logo.svg'
+                height='300px'
+                width='300px'
+                alt='hop technology logo'
+              />
+            </a>
           </div>
           <div className='footer__partners--logo'>
             {' '}
-            <Image
-              src='/wallenstam-logo.svg'
-              height='300px'
-              width='300px'
-              alt='wallenstam logo'
-            />
+            <a href='https://wallenstam.se/' target='_blank'>
+              <Image
+                src='/wallenstam-logo.svg'
+                height='300px'
+                width='300px'
+                alt='wallenstam logo'
+              />
+            </a>
           </div>
           <div className='footer__partners--logo'>
             {' '}
-            <Image
-              src='/colorich-logo.svg'
-              height='300px'
-              width='300px'
-              alt='colorich holding logo'
-            />
+            <a href='http://www.colorich.se/' target='_blank'>
+              <Image
+                src='/colorich-logo.svg'
+                height='300px'
+                width='300px'
+                alt='colorich holding logo'
+              />
+            </a>
           </div>
         </div>
       </div>
