@@ -449,11 +449,11 @@ body {
 }
 .footer__shape--walborg {
   position: absolute;
-  top: 1rem;
+  top: 4%;
   left: 50%;
   transform: translate(-50%);
   height: 18%;
-  width: 18%;
+  width: 15%;
 }
 @media only screen and (max-width: 56.25em) {
   .footer__shape--walborg {
