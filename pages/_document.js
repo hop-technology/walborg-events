@@ -6,7 +6,9 @@ export default function Document() {
       <Head>
         <link
           rel='stylesheet'
-          href='https://use.typekit.net/zfa2ryf.css'></link>
+          href='https://use.typekit.net/zfa2ryf.css'
+        ></link>
+       
       </Head>
       <body>
         <Main />
