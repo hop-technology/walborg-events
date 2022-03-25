@@ -1,0 +1,7 @@
+{
+    "baseUrl": "http://localhost:3000/",
+    "chromeWebSecurity": false,
+    "projectId": "po1tkb",
+    "video": false,
+    "screenshotOnRunFailure": false
+}

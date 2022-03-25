@@ -9,9 +9,12 @@
     "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' styles/style.comp.css -o styles/style.prefix.css",
     "compress:css": "sass styles/style.prefix.css styles/style.min.css --style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
-    "build": "next build",
+    "build:dev": "next build",
+    "build:prod": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cy:run": "cypress run --record --key 0531ffb5-f52f-423b-8944-d92a4a2c7e4e",
+    "cypress": "start-server-and-test start http://localhost:3000 cy:run"
   },
   "dependencies": {
     "next": "12.1.0",
@@ -21,9 +24,11 @@
   "devDependencies": {
     "autoprefixer": "^10.4.4",
     "concat": "^1.0.3",
+    "cypress": "^9.5.2",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^9.1.0"
+    "postcss-cli": "^9.1.0",
+    "start-server-and-test": "^1.14.0"
   }
 }
