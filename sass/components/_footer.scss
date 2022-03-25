@@ -35,6 +35,8 @@
   }
 
   &__shape {
+    display: flex;
+    justify-content: center;
     position: relative;
     bottom: 0;
     &--desktop {
@@ -51,8 +53,6 @@
     &--walborg {
       position: absolute;
       top: 4%;
-      left: 50%;
-      transform: translate(-50%);
       height: 18%;
       width: 15%;
 
@@ -61,6 +61,7 @@
         height: 10%;
       }
     }
+    
     &--text {
       position: absolute;
       top: 55%;

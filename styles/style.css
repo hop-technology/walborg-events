@@ -431,6 +431,8 @@ body {
   }
 }
 .footer__shape {
+  display: flex;
+  justify-content: center;
   position: relative;
   bottom: 0;
 }
@@ -450,8 +452,6 @@ body {
 .footer__shape--walborg {
   position: absolute;
   top: 4%;
-  left: 50%;
-  transform: translate(-50%);
   height: 18%;
   width: 15%;
 }
