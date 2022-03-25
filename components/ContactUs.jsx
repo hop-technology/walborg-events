@@ -13,9 +13,9 @@ const ContactForm = () => {
     <>
       <div className='contact'>
         <div className='contact__container'>
-          <h1 data-cy='contact-form-title' className='contact__title'>
+          <h2 data-cy='contact-form-title' className='contact__title'>
             Kontakta oss
-          </h1>
+          </h2>
           <form
             className='form'
             name='contact'

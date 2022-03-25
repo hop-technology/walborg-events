@@ -121,34 +121,7 @@
 
     @include respond(tab-port) {
       display: none;
-      // position: relative;
-      // align-content: center;
-      // align-items: center;
-      // justify-content: center;
-      // right: 37rem;
-      // top: 123rem;
-      // height: 0rem;
-      // transform: rotate(60deg) rotateY(180deg) scale(80%);
     }
-
-    // @include respond(phone-XL) {
-    //   right: 31rem;
-    //   top: 122rem;
-    // }
-
-    // @include respond(phone-L) { 
-    //   transform: rotate(60deg) rotateY(180deg) scale(130%) ;    
-    //   right: 22rem;
-    //   top: 110rem;
-    // }
-
-    // @include respond(phone-M) {
-    //   right: 16rem;
-    //   top: 100rem
-    // }
-    // @include respond(phone-S) {
-     
-    // }
 
   }
   &__image {
