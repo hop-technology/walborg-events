@@ -12,7 +12,7 @@ const Venue = () => {
           <div className='venue__info--description'>
             <p data-cy='venue-info'>
               Välkommen till en magisk oas i centrala Göteborg! Här arrangerar
-              vi allt från utbildningar, konferenser till stora fester.
+              vi allt från utbildningar, konferenser till stora fester och tar fram helhetslösningar efter era önskemål med fokus på detaljer, god kommunikation och servic.
               Magasinsgatan 1 rymmer upp till 200 personer och är den perfekta
               platsen för att skapa oförglömliga möten och stärka relationer.
             </p>

@@ -81,8 +81,17 @@ const ContactForm = () => {
                 />
               </div>
               <div>
-                <label className='privacy-policy'>
-                  Jag accepterar Walborg Events <span>privacy policy</span>{' '}
+              <label className='privacy-policy'>
+                  Jag accepterar Walborg Events{' '}
+                  <span>
+                    <a
+                      href='https://www.termsfeed.com/live/8b19c22f-c2ff-457e-a752-ec22a881e42b'
+                      target='_blank'
+                      rel='noreferrer'
+                    >
+                      privacy policy
+                    </a>
+                  </span>{' '}
                 </label>
               </div>
             </div>
