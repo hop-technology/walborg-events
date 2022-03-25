@@ -33,7 +33,7 @@ const Index = () => {
           property='og:description'
           content='Välkommen till en magisk oas i centrala Göteborg! Här arrangerar vi allt från utbildningar, konferenser till stora fester. '
         />
-        <meta property='og:image' content='' />
+        <meta property='og:image' content='/walborg-events-logo-black.png' />
 
         {/* <!-- Twitter --> */}
         <meta property='twitter:card' content='summary_large_image' />
@@ -43,8 +43,8 @@ const Index = () => {
           property='twitter:description'
           content='Välkommen till en magisk oas i centrala Göteborg! Här arrangerar vi allt från utbildningar, konferenser till stora fester. '
         />
-        <meta property='twitter:image' content='' />
-        <link rel='icon' href='/favicon.ico' />
+        <meta property='twitter:image' content='/walborg-events-logo-black.png' />
+        <link rel='icon' href='/faviconB.ico'  />
       </Head>
       <div className='wrapper'>
         <HeroSection />
