@@ -1,4 +1,5 @@
-import '../styles/style.min.css'
+// import '../styles/style.min.css'
+import '../styles/style.css'
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
