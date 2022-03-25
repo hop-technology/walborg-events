@@ -40,7 +40,7 @@ const Footer = () => {
         <div className='footer__partners'>
           <div className='footer__partners--logo'>
             {' '}
-            <a href='https://hoptech.se' target='_blank'>
+            <a href='https://hoptech.se' target='_blank' rel='noreferrer'>
               <Image
                 src='/hop-logo.svg'
                 height='300px'
@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
           <div className='footer__partners--logo'>
             {' '}
-            <a href='https://wallenstam.se/' target='_blank'>
+            <a href='https://wallenstam.se/' target='_blank' rel='noreferrer'>
               <Image
                 src='/wallenstam-logo.svg'
                 height='300px'
@@ -62,7 +62,7 @@ const Footer = () => {
           </div>
           <div className='footer__partners--logo'>
             {' '}
-            <a href='http://www.colorich.se/' target='_blank'>
+            <a href='http://www.colorich.se/' target='_blank' rel='noreferrer'>
               <Image
                 src='/colorich-logo.svg'
                 height='300px'
