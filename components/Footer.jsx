@@ -42,8 +42,8 @@ const Footer = () => {
             {' '}
             <a href='https://hoptech.se' target='_blank' rel='noreferrer'>
               <Image
-                src='/hop-logo.svg'
-                height='300px'
+                src='/HOP.webp'
+                height='150px'
                 width='300px'
                 alt='hop technology logo'
               />
@@ -53,7 +53,7 @@ const Footer = () => {
             {' '}
             <a href='https://wallenstam.se/' target='_blank' rel='noreferrer'>
               <Image
-                src='/wallenstam-logo.svg'
+                src='/wallenstam.webp'
                 height='300px'
                 width='300px'
                 alt='wallenstam logo'
@@ -64,7 +64,7 @@ const Footer = () => {
             {' '}
             <a href='http://www.colorich.se/' target='_blank' rel='noreferrer'>
               <Image
-                src='/colorich-logo.svg'
+                src='/colorich.webp'
                 height='300px'
                 width='300px'
                 alt='colorich holding logo'
