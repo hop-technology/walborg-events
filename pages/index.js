@@ -43,8 +43,12 @@ const Index = () => {
           property='twitter:description'
           content='Välkommen till en magisk oas i centrala Göteborg! Här arrangerar vi allt från utbildningar, konferenser till stora fester. '
         />
-        <meta property='twitter:image' content='/walborg-events-logo-black.png' />
-        <link rel='icon' href='/faviconB.ico'  />
+        <meta
+          property='twitter:image'
+          content='/walborg-events-logo-black.png'
+        />
+        <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+        <link rel='icon' type='image/png' href='/favicon.png' />
       </Head>
       <div className='wrapper'>
         <HeroSection />
