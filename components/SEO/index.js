@@ -9,7 +9,7 @@ const SEO = (props) => {
 
   return (
     <Head>
-      <title>{title} | App </title>
+      <title>{title}</title>
       <meta name='description' content={description} />
       <meta itemProp='name' content={title} />
       <meta itemProp='description' content={description} />
