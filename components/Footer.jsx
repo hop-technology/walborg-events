@@ -54,8 +54,8 @@ const Footer = () => {
             <a href='https://wallenstam.se/' target='_blank' rel='noreferrer'>
               <Image
                 src='/wallenstam.webp'
-                height='300px'
-                width='300px'
+                height='385px'
+                width='440px'
                 alt='wallenstam logo'
               />
             </a>
