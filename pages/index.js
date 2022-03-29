@@ -11,11 +11,6 @@ import SEO from '../components/SEO'
 const Index = () => {
   return (
     <div>
-      <Head>
-        <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-        <link rel='icon' type='image/png' href='/favicon.png' />
-        <link rel="apple-touch-icon" href="https://walborgevent.com/walborg-event-thumbnail.png" />
-      </Head>
       <SEO
         url='https://walborgevent.com'
         openGraphType='website'
@@ -24,6 +19,11 @@ const Index = () => {
         description='Välkommen till en magisk oas i centrala Göteborg! Här arrangerar vi allt från utbildningar, konferenser till stora fester.'
         image='https://walborgevent.com/walborg-event-thumbnail.png'
       />
+      <Head>
+        <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+        <link rel='icon' type='image/png' href='/favicon.png' />
+        <link rel="apple-touch-icon" href="https://walborgevent.com/walborg-event-thumbnail.png" />
+      </Head>
       <div className='wrapper'>
         <HeroSection />
         <Venue />
