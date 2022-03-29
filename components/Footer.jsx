@@ -13,24 +13,19 @@ const Footer = () => {
         <div className='footer__shape--desktop'>
           <Image
             src='/desk-footer.svg'
-            width='3840px'
-            height='1350px'
+            width={3840}
+            height={1350}
             alt='footer'
           />
         </div>
         <div className='footer__shape--mobile'>
-          <Image
-            src='/mob-footer.svg'
-            width='900px'
-            height='1460px'
-            alt='footer'
-          />
+          <Image src='/mob-footer.svg' width={900} height={1460} alt='footer' />
         </div>
         <div className='footer__shape--walborg'>
           <Image
             src='/walborg-event.svg'
-            height='700px'
-            width='700px'
+            height={700}
+            width={700}
             alt='walborg event logo'
           />
         </div>
@@ -43,8 +38,8 @@ const Footer = () => {
             <a href='https://hoptech.se' target='_blank' rel='noreferrer'>
               <Image
                 src='/HOP.webp'
-                height='150px'
-                width='300px'
+                height={150}
+                width={300}
                 alt='hop technology logo'
               />
             </a>
@@ -54,8 +49,8 @@ const Footer = () => {
             <a href='https://wallenstam.se/' target='_blank' rel='noreferrer'>
               <Image
                 src='/wallenstam.webp'
-                height='385px'
-                width='440px'
+                height={385}
+                width={440}
                 alt='wallenstam logo'
               />
             </a>
@@ -65,8 +60,8 @@ const Footer = () => {
             <a href='http://www.colorich.se/' target='_blank' rel='noreferrer'>
               <Image
                 src='/colorich.webp'
-                height='300px'
-                width='300px'
+                height={300}
+                width={300}
                 alt='colorich holding logo'
               />
             </a>
