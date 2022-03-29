@@ -21,7 +21,7 @@ const Index = () => {
         schemaType='BusinessEvent'
         title='Walborg Events'
         description='Välkommen till en magisk oas i centrala Göteborg! Här arrangerar vi allt från utbildningar, konferenser till stora fester.'
-        image='https://walborgevent.com/walborg-events-thumbnail.png'
+        image='https://walborgevent.com/walborg-event-thumbnail.png'
       />
       <div className='wrapper'>
         <HeroSection />
