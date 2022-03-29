@@ -6,24 +6,22 @@ import Collage from '../components/Collage'
 import WalborgOffer from '../components/WalborgOffer'
 import ContactUs from '../components/ContactUs'
 import Footer from '../components/Footer'
-// import SEO from '../components/SEO'
+import SEO from '../components/SEO'
 
 const Index = () => {
   return (
     <div>
-      {/* <SEO
+      <SEO
         url='https://walborgevent.com'
         openGraphType='website'
         schemaType='BusinessEvent'
         title='Walborg Events'
         description='Välkommen till en magisk oas i centrala Göteborg! Här arrangerar vi allt från utbildningar, konferenser till stora fester.'
         image='https://walborgevent.com/walborg-event-thumbnail.png'
-      /> */}
+      />
       <Head>
         <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
         <link rel='icon' type='image/png' href='/favicon.png' />
-        <meta property="og:image" content="https://walborgevent.com/walborg-event-thumbnail.png"/>
-        <meta property="twitter:image:src" content="https://walborgevent.com/walborg-event-thumbnail.png"></meta>
       </Head>
       <div className='wrapper'>
         <HeroSection />
