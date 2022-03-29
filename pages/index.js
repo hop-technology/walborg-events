@@ -1,4 +1,4 @@
-import Head from 'next/head'
+// import Head from 'next/head'
 import HeroSection from '../components/HeroSection'
 import Venue from '../components/VenueInfo'
 import ContactInfo from '../components/ContactInfo'
@@ -19,10 +19,10 @@ const Index = () => {
         description='Välkommen till en magisk oas i centrala Göteborg! Här arrangerar vi allt från utbildningar, konferenser till stora fester.'
         image='https://walborgevent.com/walborg-event-thumbnail.png'
       />
-      <Head>
+      {/* <Head>
         <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
         <link rel='icon' type='image/png' href='/favicon.png' />
-      </Head>
+      </Head> */}
       <div className='wrapper'>
         <HeroSection />
         <Venue />
