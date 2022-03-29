@@ -10,7 +10,6 @@ const socialTags = ({
   updatedAt,
 }) => {
   const metaTags = [
-    { name: "twitter:card", content: "summary_large_image" },
     {
       name: "twitter:site",
       content:
