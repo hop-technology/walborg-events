@@ -8,7 +8,7 @@ const settings = {
     description:
       'Välkommen till en magisk oas i centrala Göteborg! Här arrangerar vi allt från utbildningar, konferenser till stora fester.',
     social: {
-      graphic: 'https://walborgevent.com/walborg-events-logo-black.png',
+      graphic: 'https://walborgevent.com/walborg-event-thumbnail.png',
     },
   },
 
