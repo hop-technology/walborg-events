@@ -7,7 +7,7 @@ export default function Document() {
         <link
           rel='stylesheet'
           href='https://use.typekit.net/zfa2ryf.css'></link>
-        <link rel='preload' as='font'></link>
+        <link rel='preload' href='https://use.typekit.net/zfa2ryf.css' as='font' crossOrigin ></link>
       </Head>
       <body>
         <Main />

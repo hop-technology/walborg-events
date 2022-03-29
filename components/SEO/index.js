@@ -1,7 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Head from 'next/head'
-import settings from '../../settings'
 import metaTags from './socialTags'
 
 const SEO = (props) => {
@@ -31,26 +29,6 @@ const SEO = (props) => {
       />
     </Head>
   )
-}
-
-SEO.defaultProps = {
-  url: '/',
-  openGraphType: 'website',
-  title: settings && settings.meta && settings.meta.title,
-  description: settings && settings.meta && settings.meta.description,
-  image:
-    settings &&
-    settings.meta &&
-    settings.meta.social &&
-    settings.meta.social.graphic,
-}
-
-SEO.propTypes = {
-  url: PropTypes.string,
-  openGraphType: PropTypes.string,
-  title: PropTypes.string,
-  description: PropTypes.string,
-  image: PropTypes.string,
 }
 
 export default SEO

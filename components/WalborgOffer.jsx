@@ -24,8 +24,8 @@ const WalborgOffer = () => {
               <p>
                 Magasinsgatan 1 har en unik karaktär med fantastiskt ljus.
                 Lokalen har en skön orangeri-känsla med glastaket som släpper in
-                dagsljuset och ger en härlig rymd. <br></br><br></br> Priset för lokalen startar på
-                4000 sek.
+                dagsljuset och ger en härlig rymd. <br></br>
+                <br></br> Priset för lokalen startar på 4000 sek.
               </p>
             </div>
           </div>
