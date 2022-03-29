@@ -15,15 +15,15 @@ const Index = () => {
         <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
         <link rel='icon' type='image/png' href='/favicon.png' />
       </Head>
+      <SEO
+        url='https://walborg-events.com'
+        openGraphType='website'
+        schemaType='BusinessEvent'
+        title='Walborg Events'
+        description='Välkommen till en magisk oas i centrala Göteborg! Här arrangerar vi allt från utbildningar, konferenser till stora fester.'
+        image='https://walborg-events.com/walborg-events-logo-black.png'
+      />
       <div className='wrapper'>
-        <SEO
-          url='https://walborg-events.com'
-          openGraphType='website'
-          schemaType='BusinessEvent'
-          title='Walborg Events'
-          description='Välkommen till en magisk oas i centrala Göteborg! Här arrangerar vi allt från utbildningar, konferenser till stora fester.'
-          image='https://walborg-events.com/walborg-events-logo-black.png'
-        />
         <HeroSection />
         <Venue />
         <WalborgOffer />
