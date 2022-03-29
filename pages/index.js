@@ -16,12 +16,12 @@ const Index = () => {
         <link rel='icon' type='image/png' href='/favicon.png' />
       </Head>
       <SEO
-        url='https://walborg-events.com'
+        url='https://walborgevent.com'
         openGraphType='website'
         schemaType='BusinessEvent'
         title='Walborg Events'
         description='Välkommen till en magisk oas i centrala Göteborg! Här arrangerar vi allt från utbildningar, konferenser till stora fester.'
-        image='https://walborg-events.com/walborg-events-logo-black.png'
+        image='https://walborgevent.com/walborg-event-thumbnail.png'
       />
       <div className='wrapper'>
         <HeroSection />
