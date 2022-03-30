@@ -17,7 +17,7 @@ const WalborgOffer = () => {
             <div className='walborg_offer__text_container--text'>
               <p>
                 Walborg kan skräddarsy ditt evenemang efter dina önskemål. Vi
-                levererar förtärning, teknik, ljud, ljus, scen och möblering för
+                levererar förtäring, teknik, ljud, ljus, scen och möblering för
                 upp till 200 personer.
               </p>
               <br></br>
