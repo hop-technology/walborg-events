@@ -16,7 +16,7 @@ const ContactInfo = () => {
             </p>
           </div>
           <div className='contact_info__btn'>
-            <Link href='#contact' passHref scroll>
+            <Link href='#contact-scroll-to' passHref scroll>
               <button className='btn__submit'>
                 <div className='btn__submit--border'>
                   <p className='btn__submit--text'>Boka nu</p>

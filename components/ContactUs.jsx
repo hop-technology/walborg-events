@@ -11,7 +11,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className='contact'>
+      <div className='contact' id="contact-scroll-to">
         <div className='contact__container'>
           <h2 data-cy='contact-form-title' className='contact__title'>
             Kontakta oss

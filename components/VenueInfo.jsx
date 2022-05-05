@@ -21,7 +21,7 @@ const Venue = () => {
           </div>
         </div>
         <div>
-          <Link href='#contact' scroll passHref>
+          <Link href='#contact-scroll-to' scroll passHref>
             <button className='btn__submit'>
               <div className='btn__submit--border'>
                 <p className='btn__submit--text'>Boka nu</p>
