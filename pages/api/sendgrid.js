@@ -15,20 +15,20 @@ async function sendEmail(req, res) {
           <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
         </head>
         <body>
-          <div class="container" style="margin-left: 20px;margin-right: 20px;">
-            <h3>You've got a new mail from ${req.body.fullname} who submitted the form on Walborg Event page.</h3>
-            <div>
+          <div style="margin-left: 20px;margin-right: 20px;">
+            <h3>You've got a new submission form on Walborg Event page.</h3>
+            <br>
             <h2>Their name is:</h2>
-            <h3>${req.body.fullname}</h3>
+            <h1>${req.body.fullname}</h1>
             <br>
             <h2>Their Email is:</h2>
-            <h3>✉️ ${req.body.email}</h3>
+            <h1>✉️ ${req.body.email}</h1>
             <br>
             <h2>Their phone number is:</h2>
-            <h3>📞 ${req.body.phone}</h3>
+            <h1>📞 ${req.body.phone}</h1>
             <br>
             <h2>Message:</h2>
-            <h3>${req.body.message}</h3>
+            <h1>${req.body.message}</h1>
             <br>
           </div>
         </body>

@@ -1,4 +1,4 @@
-import react, { useState } from 'react'
+import { useState } from 'react'
 
 const ContactForm = () => {
   const handleError = (e) => {
@@ -15,9 +15,6 @@ const ContactForm = () => {
     e.target.setCustomValidity('')
   }
 
-  //   Form validation state
-  const [errors, setErrors] = useState({})
-
   //   Setting button text on form submission
   const [buttonText, setButtonText] = useState('Skicka')
 
@@ -27,67 +24,58 @@ const ContactForm = () => {
 
   // Validation check method
   const handleValidation = () => {
-    let tempErrors = {};
-    let isValid = true;
+    let isValid = true
 
     if (fullname.length <= 0) {
-      tempErrors["fullname"] = true;
-      isValid = false;
+      isValid = false
     }
     if (email.length <= 0) {
-      tempErrors["email"] = true;
-      isValid = false;
+      isValid = false
     }
     if (phone.length <= 0) {
-      tempErrors["phone"] = true;
-      isValid = false;
+      isValid = false
     }
     if (message.length <= 0) {
-      tempErrors["message"] = true;
-      isValid = false;
+      isValid = false
     }
+    return isValid
+  }
 
-    setErrors({ ...tempErrors });
-    console.log("errors", errors);
-    return isValid;
-  };
+  //   Handling form submit
+  const handleSubmit = async (e) => {
+    e.preventDefault()
 
+    let isValidForm = handleValidation()
 
-    //   Handling form submit
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-  
-      let isValidForm = handleValidation();
-  
-      if (isValidForm) {
-        setButtonText("Skickar");
-        const res = await fetch("/api/sendgrid", {
-          body: JSON.stringify({
-            email: email,
-            fullname: fullname,
-            phone: phone,
-            message: message,
-          }),
-          headers: {
-            "Content-Type": "application/json",
-          },
-          method: "POST",
-        });
-  
-        const { error } = await res.json();
-        if (error) {
-          console.log(error);
-          setShowSuccessMessage(false);
-          setShowFailureMessage(true);
-          setButtonText("Skicka");
-          return;
-        }
-        setShowSuccessMessage(true);
-        setShowFailureMessage(false);
-        setButtonText("Skicka");
-      }
-      console.log(fullname, email, phone, message);
-    };
+    if (isValidForm) {
+      setButtonText('Skickar..')
+      const res = await fetch('/api/sendgrid', {
+        body: JSON.stringify({
+          email: email,
+          fullname: fullname,
+          phone: phone,
+          message: message,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        method: 'POST',
+      })
+
+      setShowSuccessMessage(true)
+      setShowFailureMessage(false)
+      setButtonText('Skicka')
+      setFullname('')
+      setEmail('')
+      setPhone('')
+      setMessage('')
+    } else {
+      setShowSuccessMessage(false)
+      setShowFailureMessage(true)
+      setButtonText('Skicka')
+      return
+    }
+  }
 
   return (
     <>
@@ -102,7 +90,7 @@ const ContactForm = () => {
             data-cy='contact-us-form'>
             <div className='form__part1'>
               <div className='form__input'>
-                <label htmlFor='fullname'>Mitt namn är</label> <br />
+                <label htmlFor='fullname'>Mitt namn är *</label> <br />
                 <input
                   type='text'
                   name='fullname'
@@ -115,7 +103,7 @@ const ContactForm = () => {
                 />
               </div>
               <div className='form__input'>
-                <label htmlFor='email'>Kontaka mig på </label> <br />
+                <label htmlFor='email'>Kontaka mig på *</label> <br />
                 <input
                   type='email'
                   name='email'
@@ -128,7 +116,7 @@ const ContactForm = () => {
                 />
               </div>
               <div className='form__input'>
-                <label htmlFor='phone'>Mitt telefonnummer är</label> <br />
+                <label htmlFor='phone'>Mitt telefonnummer är *</label> <br />
                 <input
                   type='number'
                   name='phone'
@@ -143,7 +131,7 @@ const ContactForm = () => {
             </div>
             <div className='form__part2'>
               <p>
-                <label htmlFor='message'>Meddelande</label> <br />
+                <label htmlFor='message'>Meddelande *</label> <br />
                 <textarea
                   name='message'
                   placeholder='Meddelande'
@@ -187,6 +175,15 @@ const ContactForm = () => {
                   <p className='btn__submit--text'>{buttonText}</p>
                 </div>
               </button>
+            </div>
+            <div className='status-message'>
+              {showFailureMessage && !showSuccessMessage ? (
+                <h4 className='status-message--error'>Vänligen fyll i alla fält</h4>
+              ) : showSuccessMessage && !showFailureMessage ? (
+                <h4 className='status-message--success'>Tack för ditt meddelande</h4>
+              ) : (
+                ''
+              )}
             </div>
           </form>
         </div>
