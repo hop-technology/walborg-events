@@ -15,21 +15,21 @@ async function sendEmail(req, res) {
           <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
         </head>
         <body>
-          <div style="margin-left: 20px;margin-right: 20px;">
-            <h3>You've got a new submission form on Walborg Event page.</h3>
-            <br>
+          <div style="display: flex; align-items: center; margin-top 30px; flex-direction: column;">
+            <h1>You've got a new submission form on Walborg Event form.</h1>
+            <div style="width: 80%; height: 20px; background-color: #ffc5c3; border-radius: 3px; margin: 50px 0;"></div>
             <h2>Their name is:</h2>
-            <h1>${req.body.fullname}</h1>
-            <br>
+            <h3>${req.body.fullname}</h3>
+            <div style="width: 60%; height: 5px; background-color: #ffc5c3; border-radius: 3px; margin: 20px 0;"></div>
             <h2>Their Email is:</h2>
-            <h1>✉️ ${req.body.email}</h1>
-            <br>
+            <h3>✉️ ${req.body.email}</h3>
+            <div style="width: 60%; height: 5px; background-color: #ffc5c3; border-radius: 3px; margin: 20px 0;"></div>
             <h2>Their phone number is:</h2>
-            <h1>📞 ${req.body.phone}</h1>
-            <br>
+            <h3>📞 ${req.body.phone}</h3>
+            <div style="width: 60%; height: 5px; background-color: #ffc5c3; border-radius: 3px; margin: 20px 0;"></div>
             <h2>Message:</h2>
-            <h1>${req.body.message}</h1>
-            <br>
+            <h3>${req.body.message}</h3>
+            <div style="width: 80%; height: 20px; background-color: #ffc5c3; border-radius: 3px; margin: 50px 0;"></div>
           </div>
         </body>
       </html>`,
