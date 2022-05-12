@@ -16,7 +16,7 @@ async function sendEmail(req, res) {
         </head>
         <body>
           <div style="display: flex; align-items: center; margin-top 30px; flex-direction: column;">
-            <h1>You've got a new submission form on Walborg Event form.</h1>
+            <h1>You've got a new submission from on Walborg Event form.</h1>
             <div style="width: 80%; height: 20px; background-color: #ffc5c3; border-radius: 3px; margin: 50px 0;"></div>
             <h2>Their name is:</h2>
             <h3>${req.body.fullname}</h3>
