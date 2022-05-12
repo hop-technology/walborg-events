@@ -28,7 +28,7 @@ const HeroSection = () => {
         <div className='hero__video-container'>
           <video
             className='hero__video-container--video'
-            // autoPlay
+            autoPlay
             muted
             loop
             alt='Stämmningsfullt event i eventlokalen'>
