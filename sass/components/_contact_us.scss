@@ -191,4 +191,25 @@
     display: flex;
     justify-content: center;
   }
+
+  .status-message {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    
+    &--error {
+      border-radius: 4px;
+      padding: 1rem 2rem;
+      background-color: rgb(253, 75, 75);
+    }
+    &--success {
+      border-radius: 4px;
+      padding: 1rem 2rem;
+      background-color: rgb(25, 188, 25);
+    }
+  }
 }
